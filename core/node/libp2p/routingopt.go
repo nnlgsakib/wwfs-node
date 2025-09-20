@@ -7,17 +7,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/nnlgsakib/wwfs-sdk/autoconf"
 	"github.com/ipfs/go-datastore"
 	"github.com/ipfs/kubo/config"
 	irouting "github.com/ipfs/kubo/routing"
-	dht "github.com/nnlgsakib/kad-dht-wwfs"
-	dual "github.com/nnlgsakib/kad-dht-wwfs/dual"
-	record "github.com/libp2p/go-libp2p-record"
 	routinghelpers "github.com/libp2p/go-libp2p-routing-helpers"
 	host "github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/peer"
 	routing "github.com/libp2p/go-libp2p/core/routing"
+	dht "github.com/nnlgsakib/kad-dht-wwfs"
+	dual "github.com/nnlgsakib/kad-dht-wwfs/dual"
+	record "github.com/nnlgsakib/record-wwfs"
+	"github.com/nnlgsakib/wwfs-sdk/autoconf"
 )
 
 type RoutingOptionArgs struct {

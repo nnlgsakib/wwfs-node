@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/nnlgsakib/wwfs-sdk/ipns"
-	util "github.com/nnlgsakib/wwfs-sdk/util"
-	record "github.com/libp2p/go-libp2p-record"
 	"github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/libp2p/go-libp2p/core/peerstore"
 	madns "github.com/multiformats/go-multiaddr-dns"
+	record "github.com/nnlgsakib/record-wwfs"
+	"github.com/nnlgsakib/wwfs-sdk/ipns"
+	util "github.com/nnlgsakib/wwfs-sdk/util"
 
-	"github.com/nnlgsakib/wwfs-sdk/namesys"
-	"github.com/nnlgsakib/wwfs-sdk/namesys/republisher"
 	"github.com/ipfs/kubo/repo"
 	irouting "github.com/ipfs/kubo/routing"
+	"github.com/nnlgsakib/wwfs-sdk/namesys"
+	"github.com/nnlgsakib/wwfs-sdk/namesys/republisher"
 )
 
 const DefaultIpnsCacheSize = 128

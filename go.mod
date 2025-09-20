@@ -52,7 +52,7 @@ require (
 	github.com/libp2p/go-libp2p-kbucket v0.8.0
 	github.com/libp2p/go-libp2p-pubsub v0.14.2
 	github.com/libp2p/go-libp2p-pubsub-router v0.6.0
-	github.com/libp2p/go-libp2p-record v0.3.1
+	github.com/libp2p/go-libp2p-record v0.3.1 // indirect
 	github.com/libp2p/go-libp2p-routing-helpers v0.7.5
 	github.com/libp2p/go-libp2p-testing v0.12.0
 	github.com/libp2p/go-socket-activation v0.1.1
@@ -65,7 +65,7 @@ require (
 	github.com/nnlgsakib/go-wwfs-cmds v0.15.0
 	github.com/nnlgsakib/nopfs-wwfs v0.0.0-20250920035742-755dde3dad3d
 	github.com/nnlgsakib/nopfs-wwfs/ipfs v0.0.0-20250920035742-755dde3dad3d
-	github.com/nnlgsakib/wwfs-sdk v1.0.0
+	github.com/nnlgsakib/wwfs-sdk v1.0.5
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58
 	github.com/prometheus/client_golang v1.23.2
@@ -92,7 +92,10 @@ require (
 	google.golang.org/protobuf v1.36.9
 )
 
-require github.com/nnlgsakib/kad-dht-wwfs v1.0.1
+require (
+	github.com/nnlgsakib/kad-dht-wwfs v1.0.4
+	github.com/nnlgsakib/record-wwfs v1.0.2
+)
 
 require (
 	github.com/AndreasBriese/bbloom v0.0.0-20190825152654-46b345b51c96 // indirect

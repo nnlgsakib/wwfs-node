@@ -5,11 +5,11 @@ import (
 	"io"
 	"strings"
 
-	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	"github.com/ipfs/kubo/core/commands/cmdenv"
 	ke "github.com/ipfs/kubo/core/commands/keyencode"
-	record "github.com/libp2p/go-libp2p-record"
 	"github.com/libp2p/go-libp2p/core/peer"
+	cmds "github.com/nnlgsakib/go-wwfs-cmds"
+	record "github.com/nnlgsakib/record-wwfs"
 )
 
 type ipnsPubsubState struct {
