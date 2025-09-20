@@ -21,6 +21,7 @@ import (
 	mprome "github.com/ipfs/go-metrics-prometheus"
 	version "github.com/ipfs/kubo"
 	utilmain "github.com/ipfs/kubo/cmd/ipfs/util"
+	webui "github.com/ipfs/kubo/cmd/ipfs/wwfs-webui"
 	oldcmds "github.com/ipfs/kubo/commands"
 	config "github.com/ipfs/kubo/config"
 	cserial "github.com/ipfs/kubo/config/serialize"
@@ -198,10 +199,22 @@ Headers.
 // and don't provide a convenient http.Handler entry point, such as
 // expvar and http/pprof.
 func defaultMux(path string) corehttp.ServeOption {
-	return func(node *core.IpfsNode, _ net.Listener, mux *http.ServeMux) (*http.ServeMux, error) {
-		mux.Handle(path, http.DefaultServeMux)
-		return mux, nil
-	}
+    return func(node *core.IpfsNode, _ net.Listener, mux *http.ServeMux) (*http.ServeMux, error) {
+        mux.Handle(path, http.DefaultServeMux)
+        return mux, nil
+    }
+}
+
+// embedWebUIOption serves the embedded WebUI at /webui.
+// Replaces the previous corehttp.WebUIOption that redirected to an IPFS path.
+func embedWebUIOption() corehttp.ServeOption {
+    return func(node *core.IpfsNode, _ net.Listener, mux *http.ServeMux) (*http.ServeMux, error) {
+        h := webui.GetHandler()
+        // Ensure both /webui and /webui/ work
+        mux.Handle("/webui", http.RedirectHandler("/webui/", http.StatusMovedPermanently))
+        mux.Handle("/webui/", http.StripPrefix("/webui/", h))
+        return mux, nil
+    }
 }
 
 func daemonFunc(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment) (_err error) {
@@ -818,33 +831,37 @@ func serveHTTPApi(req *cmds.Request, cctx *oldcmds.Context) (<-chan error, error
 		}
 	}
 
-	// by default, we don't let you load arbitrary ipfs objects through the api,
-	// because this would open up the api to scripting vulnerabilities.
-	// only the webui objects are allowed.
-	// if you know what you're doing, go ahead and pass --unrestricted-api.
-	unrestricted, _ := req.Options[unrestrictedAPIAccessKwd].(bool)
-	gatewayOpt := corehttp.GatewayOption(corehttp.WebUIPaths...)
-	if unrestricted {
-		gatewayOpt = corehttp.GatewayOption("/ipfs", "/ipns")
-	}
+    // by default, we don't let you load arbitrary ipfs objects through the api,
+    // because this would open up the api to scripting vulnerabilities.
+    // Previously, only WebUI objects were allowed via corehttp.WebUIOption and GatewayOption(WebUIPaths...).
+    // We now serve the WebUI from embedded assets at /webui, so the API gateway is not exposed unless --unrestricted-api.
+    unrestricted, _ := req.Options[unrestrictedAPIAccessKwd].(bool)
 
-	opts := []corehttp.ServeOption{
-		corehttp.MetricsCollectionOption("api"),
-		corehttp.MetricsOpenCensusCollectionOption(),
-		corehttp.MetricsOpenCensusDefaultPrometheusRegistry(),
-		corehttp.CheckVersionOption(),
-		corehttp.CommandsOption(*cctx),
-		corehttp.WebUIOption,
-		gatewayOpt,
-		corehttp.VersionOption(),
-		defaultMux("/debug/vars"),
-		defaultMux("/debug/pprof/"),
-		defaultMux("/debug/stack"),
-		corehttp.MutexFractionOption("/debug/pprof-mutex/"),
-		corehttp.BlockProfileRateOption("/debug/pprof-block/"),
-		corehttp.MetricsScrapingOption("/debug/metrics/prometheus"),
-		corehttp.LogOption(),
-	}
+    opts := []corehttp.ServeOption{
+        corehttp.MetricsCollectionOption("api"),
+        corehttp.MetricsOpenCensusCollectionOption(),
+        corehttp.MetricsOpenCensusDefaultPrometheusRegistry(),
+        corehttp.CheckVersionOption(),
+        corehttp.CommandsOption(*cctx),
+        // Serve embedded WebUI at /webui
+        embedWebUIOption(),
+        // Old method using IPFS paths for WebUI:
+        // corehttp.WebUIOption,
+        // gatewayOpt,
+        corehttp.VersionOption(),
+        defaultMux("/debug/vars"),
+        defaultMux("/debug/pprof/"),
+        defaultMux("/debug/stack"),
+        corehttp.MutexFractionOption("/debug/pprof-mutex/"),
+        corehttp.BlockProfileRateOption("/debug/pprof-block/"),
+        corehttp.MetricsScrapingOption("/debug/metrics/prometheus"),
+        corehttp.LogOption(),
+    }
+
+    // Only expose /ipfs and /ipns on the API when explicitly enabled
+    if unrestricted {
+        opts = append(opts, corehttp.GatewayOption("/ipfs", "/ipns"))
+    }
 
 	if len(cfg.Gateway.RootRedirect) > 0 {
 		opts = append(opts, corehttp.RedirectOption("", cfg.Gateway.RootRedirect))
