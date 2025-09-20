@@ -65,7 +65,7 @@ require (
 	github.com/nnlgsakib/go-wwfs-cmds v0.15.0
 	github.com/nnlgsakib/nopfs-wwfs v0.0.0-20250920035742-755dde3dad3d
 	github.com/nnlgsakib/nopfs-wwfs/ipfs v0.0.0-20250920035742-755dde3dad3d
-	github.com/nnlgsakib/wwfs-sdk v1.0.5
+	github.com/nnlgsakib/wwfs-sdk v1.0.6
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58
 	github.com/prometheus/client_golang v1.23.2
