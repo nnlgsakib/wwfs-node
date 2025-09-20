@@ -9,8 +9,8 @@ import (
 
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	ipld "github.com/ipfs/go-ipld-format"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
-	opt "github.com/ipfs/kubo/core/coreiface/options"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	opt "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	mh "github.com/multiformats/go-multihash"
 )
 

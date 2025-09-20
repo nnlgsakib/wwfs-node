@@ -11,7 +11,7 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/ipns"
 	ipns_pb "github.com/nnlgsakib/wwfs-sdk/ipns/pb"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
+	cmdenv "github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
 	"google.golang.org/protobuf/proto"
 )
 

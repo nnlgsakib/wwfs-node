@@ -12,7 +12,7 @@ import (
 	"time"
 
 	logging "github.com/ipfs/go-log/v2"
-	core "github.com/ipfs/kubo/core"
+	core "github.com/nnlgsakib/wwfs-node/core"
 	ma "github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
 )

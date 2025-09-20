@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ipfs/kubo/config"
+	"github.com/nnlgsakib/wwfs-node/config"
 )
 
 func TestRepoDir(t *testing.T) {

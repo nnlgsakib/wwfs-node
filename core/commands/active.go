@@ -7,7 +7,7 @@ import (
 	"text/tabwriter"
 	"time"
 
-	oldcmds "github.com/ipfs/kubo/commands"
+	oldcmds "github.com/nnlgsakib/wwfs-node/commands"
 
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 )

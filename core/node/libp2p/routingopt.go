@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/ipfs/go-datastore"
-	"github.com/ipfs/kubo/config"
-	irouting "github.com/ipfs/kubo/routing"
+	"github.com/nnlgsakib/wwfs-node/config"
+	irouting "github.com/nnlgsakib/wwfs-node/routing"
 	routinghelpers "github.com/libp2p/go-libp2p-routing-helpers"
 	host "github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/peer"
@@ -173,8 +173,8 @@ func constructDefaultHTTPRouters(cfg *config.Config) ([]*routinghelpers.Parallel
 
 		routers = append(routers, &routinghelpers.ParallelRouter{
 			Router:                  composer,
-			IgnoreError:             true,             // https://github.com/ipfs/kubo/pull/9475#discussion_r1042507387
-			Timeout:                 15 * time.Second, // 5x server value from https://github.com/ipfs/kubo/pull/9475#discussion_r1042428529
+			IgnoreError:             true,             // https://github.com/nnlgsakib/wwfs-node/pull/9475#discussion_r1042507387
+			Timeout:                 15 * time.Second, // 5x server value from https://github.com/nnlgsakib/wwfs-node/pull/9475#discussion_r1042428529
 			DoNotWaitForSearchValue: true,
 			ExecuteAfter:            0,
 		})

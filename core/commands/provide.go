@@ -9,7 +9,7 @@ import (
 	humanize "github.com/dustin/go-humanize"
 	"github.com/nnlgsakib/wwfs-sdk/provider"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	"github.com/ipfs/kubo/core/commands/cmdenv"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
 	"github.com/nnlgsakib/kad-dht-wwfs/fullrt"
 	"golang.org/x/exp/constraints"
 )
@@ -49,7 +49,7 @@ Clear all CIDs from the reprovide queue.
 Note: Kubo will automatically clear the queue when it detects a change of
 Reprovider.Strategy upon a restart. For more information about reprovider
 strategies, see:
-https://github.com/ipfs/kubo/blob/master/docs/config.md#reproviderstrategy
+https://github.com/nnlgsakib/wwfs-node/blob/master/docs/config.md#reproviderstrategy
 `,
 	},
 	Options: []cmds.Option{
@@ -100,7 +100,7 @@ var provideStatCmd = &cmds.Command{
 		ShortDescription: `
 Returns statistics about the content the node is reproviding every
 Reprovider.Interval according to Reprovider.Strategy:
-https://github.com/ipfs/kubo/blob/master/docs/config.md#reprovider
+https://github.com/nnlgsakib/wwfs-node/blob/master/docs/config.md#reprovider
 
 This interface is not stable and may change from release to release.
 

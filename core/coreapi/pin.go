@@ -11,12 +11,12 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	pin "github.com/nnlgsakib/wwfs-sdk/pinning/pinner"
 	"github.com/ipfs/go-cid"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
-	caopts "github.com/ipfs/kubo/core/coreiface/options"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	caopts "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/ipfs/kubo/tracing"
+	"github.com/nnlgsakib/wwfs-node/tracing"
 )
 
 type PinAPI CoreAPI

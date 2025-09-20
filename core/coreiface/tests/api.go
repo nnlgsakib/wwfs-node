@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	coreiface "github.com/ipfs/kubo/core/coreiface"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
 )
 
 var errAPINotImplemented = errors.New("api not implemented")

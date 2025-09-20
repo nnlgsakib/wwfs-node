@@ -1,4 +1,4 @@
-module github.com/ipfs/kubo/test/dependencies
+module github.com/nnlgsakib/wwfs-node/test/dependencies
 
 go 1.25
 

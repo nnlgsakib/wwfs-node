@@ -1,7 +1,7 @@
 package kubo
 
 import (
-	commands "github.com/ipfs/kubo/core/commands"
+	commands "github.com/nnlgsakib/wwfs-node/core/commands"
 
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 )

@@ -9,13 +9,13 @@ import (
 
 	ns "github.com/nnlgsakib/wwfs-sdk/namesys"
 	cidenc "github.com/ipfs/go-cidutil/cidenc"
-	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
-	"github.com/ipfs/kubo/core/commands/cmdutils"
-	ncmd "github.com/ipfs/kubo/core/commands/name"
+	cmdenv "github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdutils"
+	ncmd "github.com/nnlgsakib/wwfs-node/core/commands/name"
 
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	options "github.com/ipfs/kubo/core/coreiface/options"
+	options "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 )
 
 const (

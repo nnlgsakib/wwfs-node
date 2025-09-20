@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/nnlgsakib/wwfs-sdk/ipns"
-	"github.com/ipfs/kubo/core/commands/name"
-	"github.com/ipfs/kubo/test/cli/harness"
+	"github.com/nnlgsakib/wwfs-node/core/commands/name"
+	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
 	"github.com/stretchr/testify/require"
 )
 

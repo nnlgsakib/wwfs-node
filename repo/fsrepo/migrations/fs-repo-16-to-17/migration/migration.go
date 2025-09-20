@@ -16,8 +16,8 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/repo/fsrepo/migrations/atomicfile"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/repo/fsrepo/migrations/atomicfile"
 )
 
 // Options contains migration options for embedded migrations

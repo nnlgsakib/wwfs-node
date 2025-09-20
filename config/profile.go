@@ -143,7 +143,7 @@ You should use this datastore if:
 * You are ok with the default speed of data import, or prefer to use --nocopy.
 
 See configuration documentation at:
-https://github.com/ipfs/kubo/blob/master/docs/datastores.md#flatfs
+https://github.com/nnlgsakib/wwfs-node/blob/master/docs/datastores.md#flatfs
 
 NOTE: This profile may only be applied when first initializing node at IPFS_PATH
       via 'ipfs init --profile flatfs'
@@ -183,7 +183,7 @@ You should use this datastore if:
 - Performance is helped significantly by running on a system with plenty of memory.
 
 See configuration documentation at:
-https://github.com/ipfs/kubo/blob/master/docs/datastores.md#pebbleds
+https://github.com/nnlgsakib/wwfs-node/blob/master/docs/datastores.md#pebbleds
 
 NOTE: This profile may only be applied when first initializing node at IPFS_PATH
       via 'ipfs init --profile pebbleds'
@@ -226,7 +226,7 @@ Other caveats:
   if your dataset is bigger than a terabyte.
 
 See configuration documentation at:
-https://github.com/ipfs/kubo/blob/master/docs/datastores.md#badgerds
+https://github.com/nnlgsakib/wwfs-node/blob/master/docs/datastores.md#badgerds
 
 NOTE: This profile may only be applied when first initializing node at IPFS_PATH
       via 'ipfs init --profile badgerds'

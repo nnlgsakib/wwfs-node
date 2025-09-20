@@ -7,7 +7,7 @@ import (
 
 	"github.com/nnlgsakib/wwfs-sdk/autoconf"
 	logging "github.com/ipfs/go-log/v2"
-	version "github.com/ipfs/kubo"
+	version "github.com/nnlgsakib/wwfs-node"
 )
 
 var autoconfLog = logging.Logger("autoconf")

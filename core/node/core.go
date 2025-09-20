@@ -26,9 +26,9 @@ import (
 	dagpb "github.com/ipld/go-codec-dagpb"
 	"go.uber.org/fx"
 
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core/node/helpers"
-	"github.com/ipfs/kubo/repo"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core/node/helpers"
+	"github.com/nnlgsakib/wwfs-node/repo"
 )
 
 // BlockService creates new blockservice which provides an interface to fetch content-addressable blocks

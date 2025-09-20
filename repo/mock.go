@@ -9,7 +9,7 @@ import (
 	keystore "github.com/nnlgsakib/wwfs-sdk/keystore"
 	rcmgr "github.com/libp2p/go-libp2p/p2p/host/resource-manager"
 
-	config "github.com/ipfs/kubo/config"
+	config "github.com/nnlgsakib/wwfs-node/config"
 	ma "github.com/multiformats/go-multiaddr"
 )
 

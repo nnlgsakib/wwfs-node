@@ -17,9 +17,9 @@ import (
 
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log/v2"
-	"github.com/ipfs/kubo/config"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
-	"github.com/ipfs/kubo/core/coreiface/options"
+	"github.com/nnlgsakib/wwfs-node/config"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	ci "github.com/libp2p/go-libp2p/core/crypto"
 	p2phost "github.com/libp2p/go-libp2p/core/host"
@@ -39,9 +39,9 @@ import (
 	provider "github.com/nnlgsakib/wwfs-sdk/provider"
 	offlineroute "github.com/nnlgsakib/wwfs-sdk/routing/offline"
 
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/node"
-	"github.com/ipfs/kubo/repo"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/node"
+	"github.com/nnlgsakib/wwfs-node/repo"
 	"github.com/nnlgsakib/wwfs-sdk/namesys"
 )
 

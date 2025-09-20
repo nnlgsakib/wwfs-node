@@ -1,4 +1,4 @@
-module github.com/ipfs/kubo
+module github.com/nnlgsakib/wwfs-node
 
 go 1.25
 

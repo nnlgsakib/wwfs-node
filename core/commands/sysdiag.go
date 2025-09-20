@@ -5,10 +5,10 @@ import (
 	"runtime"
 
 	"github.com/nnlgsakib/go-wwfs-cmds"
-	version "github.com/ipfs/kubo"
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core"
-	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
+	version "github.com/nnlgsakib/wwfs-node"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core"
+	cmdenv "github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
 	manet "github.com/multiformats/go-multiaddr/net"
 	sysi "github.com/whyrusleeping/go-sysinfo"
 )

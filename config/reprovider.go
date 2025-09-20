@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	DefaultReproviderInterval = time.Hour * 22 // https://github.com/ipfs/kubo/pull/9326
+	DefaultReproviderInterval = time.Hour * 22 // https://github.com/nnlgsakib/wwfs-node/pull/9326
 	DefaultReproviderStrategy = "all"
 )
 

@@ -10,10 +10,10 @@ import (
 	"path"
 	"testing"
 
-	"github.com/ipfs/kubo/thirdparty/unit"
+	"github.com/nnlgsakib/wwfs-node/thirdparty/unit"
 
 	random "github.com/ipfs/go-test/random"
-	config "github.com/ipfs/kubo/config"
+	config "github.com/nnlgsakib/wwfs-node/config"
 )
 
 var (

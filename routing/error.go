@@ -3,7 +3,7 @@ package routing
 import (
 	"fmt"
 
-	"github.com/ipfs/kubo/config"
+	"github.com/nnlgsakib/wwfs-node/config"
 )
 
 type ParamNeededError struct {

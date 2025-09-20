@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/test/cli/harness"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
 	"github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
 	"github.com/stretchr/testify/require"

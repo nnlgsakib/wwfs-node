@@ -12,10 +12,10 @@ import (
 	"time"
 
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	"github.com/ipfs/kubo/config"
-	iface "github.com/ipfs/kubo/core/coreiface"
-	"github.com/ipfs/kubo/core/coreiface/tests"
-	"github.com/ipfs/kubo/test/cli/harness"
+	"github.com/nnlgsakib/wwfs-node/config"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/tests"
+	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
 	ma "github.com/multiformats/go-multiaddr"
 )
 

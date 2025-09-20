@@ -9,12 +9,12 @@ import (
 	"slices"
 	"strings"
 
-	version "github.com/ipfs/kubo"
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/commands/cmdenv"
+	version "github.com/nnlgsakib/wwfs-node"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
 
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	ke "github.com/ipfs/kubo/core/commands/keyencode"
+	ke "github.com/nnlgsakib/wwfs-node/core/commands/keyencode"
 	kb "github.com/libp2p/go-libp2p-kbucket"
 	ic "github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/libp2p/go-libp2p/core/host"

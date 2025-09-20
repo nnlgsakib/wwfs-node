@@ -10,8 +10,8 @@ import (
 	cid "github.com/ipfs/go-cid"
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log/v2"
-	config "github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core"
+	config "github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core"
 	"github.com/libp2p/go-libp2p/core/host"
 	peer "github.com/libp2p/go-libp2p/core/peer"
 )
@@ -118,7 +118,7 @@ func pinAllMFS(ctx context.Context, node pinMFSNode, cfg *config.Config, lastPin
 	// get the most recent MFS root cid.
 	// Warning! This can be super expensive.
 	// See https://github.com/nnlgsakib/wwfs-sdk/pull/751
-	// and https://github.com/ipfs/kubo/issues/8694
+	// and https://github.com/nnlgsakib/wwfs-node/issues/8694
 	// Reading an MFS-directory nodes can take minutes due to
 	// ever growing cache being synced to unixfs.
 	rootNode, err := node.RootNode()

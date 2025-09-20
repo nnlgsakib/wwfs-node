@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	datastore "github.com/ipfs/go-datastore"
-	config "github.com/ipfs/kubo/config"
+	config "github.com/nnlgsakib/wwfs-node/config"
 	"github.com/stretchr/testify/require"
 )
 

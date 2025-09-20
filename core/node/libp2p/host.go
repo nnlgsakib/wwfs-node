@@ -11,9 +11,9 @@ import (
 	routedhost "github.com/libp2p/go-libp2p/p2p/host/routed"
 	record "github.com/nnlgsakib/record-wwfs"
 
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core/node/helpers"
-	"github.com/ipfs/kubo/repo"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core/node/helpers"
+	"github.com/nnlgsakib/wwfs-node/repo"
 
 	"go.uber.org/fx"
 )

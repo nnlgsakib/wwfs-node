@@ -6,13 +6,13 @@ import (
 	"io"
 	"os"
 
-	"github.com/ipfs/kubo/core/commands/cmdenv"
-	"github.com/ipfs/kubo/core/commands/cmdutils"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdutils"
 
 	"github.com/cheggaaa/pb"
 	"github.com/nnlgsakib/wwfs-sdk/files"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	iface "github.com/ipfs/kubo/core/coreiface"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
 )
 
 const (

@@ -7,12 +7,12 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/ipld/merkledag/dagutils"
 	ft "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs"
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
-	caopts "github.com/ipfs/kubo/core/coreiface/options"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	caopts "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/ipfs/kubo/tracing"
+	"github.com/nnlgsakib/wwfs-node/tracing"
 )
 
 type ObjectAPI CoreAPI

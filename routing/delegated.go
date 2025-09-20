@@ -9,8 +9,8 @@ import (
 
 	"github.com/ipfs/go-datastore"
 	logging "github.com/ipfs/go-log/v2"
-	version "github.com/ipfs/kubo"
-	"github.com/ipfs/kubo/config"
+	version "github.com/nnlgsakib/wwfs-node"
+	"github.com/nnlgsakib/wwfs-node/config"
 	routinghelpers "github.com/libp2p/go-libp2p-routing-helpers"
 	ic "github.com/libp2p/go-libp2p/core/crypto"
 	host "github.com/libp2p/go-libp2p/core/host"

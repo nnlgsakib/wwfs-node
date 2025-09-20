@@ -7,8 +7,8 @@ import (
 
 	"github.com/nnlgsakib/wwfs-sdk/ipns"
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	iface "github.com/ipfs/kubo/core/coreiface"
-	caopts "github.com/ipfs/kubo/core/coreiface/options"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	caopts "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/multiformats/go-multibase"
 )

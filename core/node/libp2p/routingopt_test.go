@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/nnlgsakib/wwfs-sdk/autoconf"
-	config "github.com/ipfs/kubo/config"
+	config "github.com/nnlgsakib/wwfs-node/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -3,14 +3,14 @@
 #
 # name             go-path                  number of the sub-plugin or *
 
-ipldgit github.com/ipfs/kubo/plugin/plugins/git *
-iplddagjose github.com/ipfs/kubo/plugin/plugins/dagjose *
+ipldgit github.com/nnlgsakib/wwfs-node/plugin/plugins/git *
+iplddagjose github.com/nnlgsakib/wwfs-node/plugin/plugins/dagjose *
 
-badgerds github.com/ipfs/kubo/plugin/plugins/badgerds *
-flatfs github.com/ipfs/kubo/plugin/plugins/flatfs *
-levelds github.com/ipfs/kubo/plugin/plugins/levelds *
-pebbleds github.com/ipfs/kubo/plugin/plugins/pebbleds *
-peerlog github.com/ipfs/kubo/plugin/plugins/peerlog *
-fxtest github.com/ipfs/kubo/plugin/plugins/fxtest *
-nopfs github.com/ipfs/kubo/plugin/plugins/nopfs *
-telemetry github.com/ipfs/kubo/plugin/plugins/telemetry *
+badgerds github.com/nnlgsakib/wwfs-node/plugin/plugins/badgerds *
+flatfs github.com/nnlgsakib/wwfs-node/plugin/plugins/flatfs *
+levelds github.com/nnlgsakib/wwfs-node/plugin/plugins/levelds *
+pebbleds github.com/nnlgsakib/wwfs-node/plugin/plugins/pebbleds *
+peerlog github.com/nnlgsakib/wwfs-node/plugin/plugins/peerlog *
+fxtest github.com/nnlgsakib/wwfs-node/plugin/plugins/fxtest *
+nopfs github.com/nnlgsakib/wwfs-node/plugin/plugins/nopfs *
+telemetry github.com/nnlgsakib/wwfs-node/plugin/plugins/telemetry *

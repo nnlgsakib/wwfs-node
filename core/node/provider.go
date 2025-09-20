@@ -15,9 +15,9 @@ import (
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	"github.com/ipfs/go-datastore/query"
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/repo"
-	irouting "github.com/ipfs/kubo/routing"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/repo"
+	irouting "github.com/nnlgsakib/wwfs-node/routing"
 	"go.uber.org/fx"
 )
 
@@ -95,7 +95,7 @@ size of 10TiB, it would take %v to provide the complete set.
 ⏰ The total provide time needs to stay under your reprovide interval (%v) to prevent falling behind!
 
 💡 Consider enabling the Accelerated DHT to enhance your system performance. See:
-https://github.com/ipfs/kubo/blob/master/docs/config.md#routingaccelerateddhtclient`,
+https://github.com/nnlgsakib/wwfs-node/blob/master/docs/config.md#routingaccelerateddhtclient`,
 										keysProvided, avgProvideSpeed, avgProvideSpeed*probableBigBlockstore, reprovideInterval)
 									return false
 								}
@@ -122,7 +122,7 @@ We observed that you recently provided %d keys at an average rate of %v per key.
 ⏰ The total provide time needs to stay under your reprovide interval (%v) to prevent falling behind!
 
 💡 Consider enabling the Accelerated DHT to enhance your reprovide throughput. See:
-https://github.com/ipfs/kubo/blob/master/docs/config.md#routingaccelerateddhtclient`,
+https://github.com/nnlgsakib/wwfs-node/blob/master/docs/config.md#routingaccelerateddhtclient`,
 							keysProvided, avgProvideSpeed, count, avgProvideSpeed*time.Duration(count), reprovideInterval)
 					}
 					return false

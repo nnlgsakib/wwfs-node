@@ -12,7 +12,7 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/routing/http/types"
 	"github.com/nnlgsakib/wwfs-sdk/routing/http/types/iter"
 	cid "github.com/ipfs/go-cid"
-	core "github.com/ipfs/kubo/core"
+	core "github.com/nnlgsakib/wwfs-node/core"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/libp2p/go-libp2p/core/routing"
 )

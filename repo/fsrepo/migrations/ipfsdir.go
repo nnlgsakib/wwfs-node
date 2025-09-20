@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/misc/fsutil"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/misc/fsutil"
 )
 
 const (

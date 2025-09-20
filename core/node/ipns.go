@@ -11,8 +11,8 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/ipns"
 	util "github.com/nnlgsakib/wwfs-sdk/util"
 
-	"github.com/ipfs/kubo/repo"
-	irouting "github.com/ipfs/kubo/routing"
+	"github.com/nnlgsakib/wwfs-node/repo"
+	irouting "github.com/nnlgsakib/wwfs-node/routing"
 	"github.com/nnlgsakib/wwfs-sdk/namesys"
 	"github.com/nnlgsakib/wwfs-sdk/namesys/republisher"
 )

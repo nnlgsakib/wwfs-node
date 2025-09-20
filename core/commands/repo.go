@@ -11,11 +11,11 @@ import (
 	"sync"
 	"text/tabwriter"
 
-	oldcmds "github.com/ipfs/kubo/commands"
-	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
-	corerepo "github.com/ipfs/kubo/core/corerepo"
-	fsrepo "github.com/ipfs/kubo/repo/fsrepo"
-	"github.com/ipfs/kubo/repo/fsrepo/migrations"
+	oldcmds "github.com/nnlgsakib/wwfs-node/commands"
+	cmdenv "github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	corerepo "github.com/nnlgsakib/wwfs-node/core/corerepo"
+	fsrepo "github.com/nnlgsakib/wwfs-node/repo/fsrepo"
+	"github.com/nnlgsakib/wwfs-node/repo/fsrepo/migrations"
 
 	humanize "github.com/dustin/go-humanize"
 	bstore "github.com/nnlgsakib/wwfs-sdk/blockstore"
@@ -440,7 +440,7 @@ migration. Versions below 16 require external migration tools.
 			fmt.Println("Repository migration failed:")
 			fmt.Printf("  %s\n", err)
 			fmt.Println("If you think this is a bug, please file an issue and include this whole log output.")
-			fmt.Println("  https://github.com/ipfs/kubo")
+			fmt.Println("  https://github.com/nnlgsakib/wwfs-node")
 			return err
 		}
 

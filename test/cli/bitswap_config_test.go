@@ -7,8 +7,8 @@ import (
 
 	"github.com/nnlgsakib/wwfs-sdk/bitswap/network/bsnet"
 	"github.com/ipfs/go-test/random"
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/test/cli/harness"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
 	"github.com/stretchr/testify/assert"
 )
 

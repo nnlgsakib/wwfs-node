@@ -24,8 +24,8 @@ import (
 	mfs "github.com/nnlgsakib/wwfs-sdk/mfs"
 	cid "github.com/ipfs/go-cid"
 	logging "github.com/ipfs/go-log/v2"
-	iface "github.com/ipfs/kubo/core/coreiface"
-	options "github.com/ipfs/kubo/core/coreiface/options"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	options "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 )
 
 func init() {

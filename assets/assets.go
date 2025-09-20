@@ -5,8 +5,8 @@ import (
 	"fmt"
 	gopath "path"
 
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/coreapi"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/coreapi"
 
 	"github.com/nnlgsakib/wwfs-sdk/files"
 	cid "github.com/ipfs/go-cid"

@@ -15,8 +15,8 @@ import (
 	"testing"
 
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
-	"github.com/ipfs/kubo/core/coreiface/options"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 
 	"github.com/nnlgsakib/wwfs-sdk/files"
 	mdag "github.com/nnlgsakib/wwfs-sdk/ipld/merkledag"

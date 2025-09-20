@@ -11,8 +11,8 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	logging "github.com/ipfs/go-log/v2"
-	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
-	options "github.com/ipfs/kubo/core/coreiface/options"
+	cmdenv "github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	options "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 )
 
 var log = logging.Logger("core/commands/ipns")

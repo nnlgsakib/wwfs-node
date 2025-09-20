@@ -8,9 +8,9 @@ import (
 
 	filestore "github.com/nnlgsakib/wwfs-sdk/filestore"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	core "github.com/ipfs/kubo/core"
-	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
-	e "github.com/ipfs/kubo/core/commands/e"
+	core "github.com/nnlgsakib/wwfs-node/core"
+	cmdenv "github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	e "github.com/nnlgsakib/wwfs-node/core/commands/e"
 
 	"github.com/ipfs/go-cid"
 )

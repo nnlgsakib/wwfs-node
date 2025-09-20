@@ -14,10 +14,10 @@ import (
 	"github.com/anmitsu/go-shlex"
 	"github.com/elgris/jsondiff"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	config "github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core/commands/cmdenv"
-	"github.com/ipfs/kubo/repo"
-	"github.com/ipfs/kubo/repo/fsrepo"
+	config "github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	"github.com/nnlgsakib/wwfs-node/repo"
+	"github.com/nnlgsakib/wwfs-node/repo/fsrepo"
 )
 
 // ConfigUpdateOutput is config profile apply command's output

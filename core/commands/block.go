@@ -8,11 +8,11 @@ import (
 
 	"github.com/nnlgsakib/wwfs-sdk/files"
 
-	"github.com/ipfs/kubo/config"
-	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
-	"github.com/ipfs/kubo/core/commands/cmdutils"
+	"github.com/nnlgsakib/wwfs-node/config"
+	cmdenv "github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdutils"
 
-	options "github.com/ipfs/kubo/core/coreiface/options"
+	options "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	mh "github.com/multiformats/go-multihash"

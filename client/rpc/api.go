@@ -14,22 +14,22 @@ import (
 	"time"
 
 	"github.com/blang/semver/v4"
-	"github.com/nnlgsakib/wwfs-sdk/ipld/merkledag"
 	"github.com/ipfs/go-cid"
 	legacy "github.com/ipfs/go-ipld-legacy"
-	ipfs "github.com/ipfs/kubo"
-	iface "github.com/ipfs/kubo/core/coreiface"
-	caopts "github.com/ipfs/kubo/core/coreiface/options"
-	"github.com/ipfs/kubo/misc/fsutil"
 	dagpb "github.com/ipld/go-codec-dagpb"
 	_ "github.com/ipld/go-ipld-prime/codec/dagcbor"
 	"github.com/ipld/go-ipld-prime/node/basicnode"
 	ma "github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
+	ipfs "github.com/nnlgsakib/wwfs-node"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	caopts "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
+	"github.com/nnlgsakib/wwfs-node/misc/fsutil"
+	"github.com/nnlgsakib/wwfs-sdk/ipld/merkledag"
 )
 
 const (
-	DefaultPathName = ".ipfs"
+	DefaultPathName = ".wwfs"
 	DefaultPathRoot = "~/" + DefaultPathName
 	DefaultApiFile  = "api"
 	EnvDir          = "IPFS_PATH"

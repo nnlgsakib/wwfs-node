@@ -22,10 +22,10 @@ import (
 	offroute "github.com/nnlgsakib/wwfs-sdk/routing/offline"
 	"go.uber.org/fx"
 
-	config "github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core/node/helpers"
-	"github.com/ipfs/kubo/repo"
-	irouting "github.com/ipfs/kubo/routing"
+	config "github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core/node/helpers"
+	"github.com/nnlgsakib/wwfs-node/repo"
+	irouting "github.com/nnlgsakib/wwfs-node/routing"
 )
 
 type Router struct {
@@ -318,7 +318,7 @@ func autoRelayFeeder(cfgPeering config.Peering, peerChan chan<- peer.AddrInfo) f
 
 				// Additionally, feed all connected swarm peers as potential relay candidates.
 				// This includes peers from HTTP routing, manual swarm connect, mDNS discovery, etc.
-				// (fixes https://github.com/ipfs/kubo/issues/10899)
+				// (fixes https://github.com/nnlgsakib/wwfs-node/issues/10899)
 				connectedPeers := h.Network().Peers()
 				for _, p := range connectedPeers {
 					addrs := h.Peerstore().Addrs(p)

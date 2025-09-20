@@ -9,9 +9,9 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/ipld/merkledag/traverse"
 	cid "github.com/ipfs/go-cid"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	"github.com/ipfs/kubo/core/commands/cmdenv"
-	"github.com/ipfs/kubo/core/commands/cmdutils"
-	"github.com/ipfs/kubo/core/commands/e"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdutils"
+	"github.com/nnlgsakib/wwfs-node/core/commands/e"
 )
 
 // TODO cache every cid traversal in a dp cache

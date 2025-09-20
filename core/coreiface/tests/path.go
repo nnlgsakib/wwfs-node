@@ -10,7 +10,7 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	"github.com/ipfs/go-cid"
 	ipldcbor "github.com/ipfs/go-ipld-cbor"
-	"github.com/ipfs/kubo/core/coreiface/options"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	"github.com/stretchr/testify/require"
 )
 

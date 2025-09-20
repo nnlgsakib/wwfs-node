@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	version "github.com/ipfs/kubo"
+	version "github.com/nnlgsakib/wwfs-node"
 	"github.com/nnlgsakib/wwfs-sdk/tracing"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/sdk/resource"

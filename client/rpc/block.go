@@ -8,8 +8,8 @@ import (
 
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	"github.com/ipfs/go-cid"
-	iface "github.com/ipfs/kubo/core/coreiface"
-	caopts "github.com/ipfs/kubo/core/coreiface/options"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	caopts "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	mc "github.com/multiformats/go-multicodec"
 	mh "github.com/multiformats/go-multihash"
 )

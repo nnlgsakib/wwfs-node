@@ -16,11 +16,11 @@ import (
 
 	"github.com/google/uuid"
 	logging "github.com/ipfs/go-log/v2"
-	ipfs "github.com/ipfs/kubo"
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/corerepo"
-	"github.com/ipfs/kubo/plugin"
+	ipfs "github.com/nnlgsakib/wwfs-node"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/corerepo"
+	"github.com/nnlgsakib/wwfs-node/plugin"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/pnet"
 	multiaddr "github.com/multiformats/go-multiaddr"
@@ -283,7 +283,7 @@ No data sent yet. To opt-out before collection starts:
 • Then restart daemon
 
 This message is shown only once.
-Learn more: https://github.com/ipfs/kubo/blob/master/docs/telemetry.md
+Learn more: https://github.com/nnlgsakib/wwfs-node/blob/master/docs/telemetry.md
 
 
 `, p.sendDelay, p.sendDelay, endpoint, p.event.UUID, modeEnvVar)

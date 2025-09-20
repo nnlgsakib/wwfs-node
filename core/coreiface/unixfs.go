@@ -9,7 +9,7 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/files"
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	"github.com/ipfs/go-cid"
-	"github.com/ipfs/kubo/core/coreiface/options"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 )
 
 type AddEvent struct {

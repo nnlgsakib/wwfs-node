@@ -14,9 +14,9 @@ import (
 	"time"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/commands/cmdenv"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
 
 	bservice "github.com/nnlgsakib/wwfs-sdk/blockservice"
 	offline "github.com/nnlgsakib/wwfs-sdk/exchange/offline"
@@ -29,7 +29,7 @@ import (
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log/v2"
-	iface "github.com/ipfs/kubo/core/coreiface"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
 	mh "github.com/multiformats/go-multihash"
 )
 
@@ -480,7 +480,7 @@ being GC'ed.
 		}
 
 		// Sanity-check: ensure root CID is a valid UnixFS (dag-pb or raw block)
-		// Context: https://github.com/ipfs/kubo/issues/10331
+		// Context: https://github.com/nnlgsakib/wwfs-node/issues/10331
 		srcCidType := node.Cid().Type()
 		switch srcCidType {
 		case cid.Raw:

@@ -8,8 +8,8 @@ import (
 
 	"github.com/nnlgsakib/wwfs-sdk/ipns"
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	iface "github.com/ipfs/kubo/core/coreiface"
-	"github.com/ipfs/kubo/core/coreiface/options"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	"github.com/stretchr/testify/require"
 )
 

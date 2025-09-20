@@ -10,7 +10,7 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/ipld/merkledag"
 	uio "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs/io"
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	"github.com/ipfs/kubo/core/coreiface/options"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	"github.com/ipld/go-ipld-prime"
 )
 

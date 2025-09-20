@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core/commands/cmdenv"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
 
 	"github.com/cheggaaa/pb"
 	"github.com/nnlgsakib/wwfs-sdk/files"
@@ -19,8 +19,8 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/verifcid"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	ipld "github.com/ipfs/go-ipld-format"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
-	"github.com/ipfs/kubo/core/coreiface/options"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	mh "github.com/multiformats/go-multihash"
 )
 
@@ -164,7 +164,7 @@ Note: CIDv1 is automatically used when using non-default options like custom
 hash functions or when raw-leaves is explicitly enabled.
 
 Use Import.* configuration options to override global implicit defaults:
-https://github.com/ipfs/kubo/blob/master/docs/config.md#import
+https://github.com/nnlgsakib/wwfs-node/blob/master/docs/config.md#import
 `,
 	},
 

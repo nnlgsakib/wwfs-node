@@ -4,7 +4,7 @@ import (
 	dag "github.com/nnlgsakib/wwfs-sdk/ipld/merkledag"
 	ft "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs"
 	cid "github.com/ipfs/go-cid"
-	core "github.com/ipfs/kubo/core"
+	core "github.com/nnlgsakib/wwfs-node/core"
 )
 
 func AddMetadataTo(n *core.IpfsNode, skey string, m *ft.Metadata) (string, error) {

@@ -4,9 +4,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/node"
-	"github.com/ipfs/kubo/plugin"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/node"
+	"github.com/nnlgsakib/wwfs-node/plugin"
 	"github.com/nnlgsakib/nopfs-wwfs"
 	"github.com/nnlgsakib/nopfs-wwfs/ipfs"
 	"go.uber.org/fx"

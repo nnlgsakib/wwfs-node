@@ -5,7 +5,7 @@ import (
 
 	"github.com/nnlgsakib/wwfs-sdk/path"
 
-	"github.com/ipfs/kubo/core/coreiface/options"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 )
 
 // Pin holds information about pinned resource

@@ -11,11 +11,11 @@ import (
 	"go.uber.org/fx"
 
 	"github.com/nnlgsakib/wwfs-sdk/bootstrap"
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/coreapi"
-	libp2p2 "github.com/ipfs/kubo/core/node/libp2p"
-	"github.com/ipfs/kubo/repo"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/coreapi"
+	libp2p2 "github.com/nnlgsakib/wwfs-node/core/node/libp2p"
+	"github.com/nnlgsakib/wwfs-node/repo"
 
 	"github.com/ipfs/go-datastore"
 	syncds "github.com/ipfs/go-datastore/sync"
@@ -25,7 +25,7 @@ import (
 	"github.com/libp2p/go-libp2p-pubsub/timecache"
 	"github.com/libp2p/go-libp2p/core/peer"
 
-	mock "github.com/ipfs/kubo/core/mock"
+	mock "github.com/nnlgsakib/wwfs-node/core/mock"
 	mocknet "github.com/libp2p/go-libp2p/p2p/net/mock"
 )
 

@@ -14,9 +14,9 @@ import (
 	uio "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs/io"
 	util "github.com/nnlgsakib/wwfs-sdk/util"
 	"github.com/ipfs/go-log/v2"
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core/node/libp2p"
-	"github.com/ipfs/kubo/p2p"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core/node/libp2p"
+	"github.com/nnlgsakib/wwfs-node/p2p"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	"github.com/libp2p/go-libp2p-pubsub/timecache"
 	"github.com/libp2p/go-libp2p/core/peer"
@@ -168,7 +168,7 @@ func LibP2P(bcfg *BuildCfg, cfg *config.Config, userResourceOverrides rcmgr.Part
 		// if no manual /ws listener was set by the user
 		if enableAutoWSS && !wssWildcardPresent && !customWsPresent {
 			if len(tcpListeners) == 0 {
-				logger.Error("Invalid configuration, AutoTLS will be disabled: AutoTLS.AutoWSS=true requires at least one /tcp listener present in Addresses.Swarm, see https://github.com/ipfs/kubo/blob/master/docs/config.md#autotls")
+				logger.Error("Invalid configuration, AutoTLS will be disabled: AutoTLS.AutoWSS=true requires at least one /tcp listener present in Addresses.Swarm, see https://github.com/nnlgsakib/wwfs-node/blob/master/docs/config.md#autotls")
 				enableAutoTLS = false
 			}
 			for _, tcpListener := range tcpListeners {
@@ -179,7 +179,7 @@ func LibP2P(bcfg *BuildCfg, cfg *config.Config, userResourceOverrides rcmgr.Part
 		}
 
 		if !wssWildcardPresent && !enableAutoWSS {
-			logger.Error(fmt.Sprintf("Invalid configuration, AutoTLS will be disabled: AutoTLS.Enabled=true requires a /tcp listener ending with %q to be present in Addresses.Swarm or AutoTLS.AutoWSS=true, see https://github.com/ipfs/kubo/blob/master/docs/config.md#autotls", wssWildcard))
+			logger.Error(fmt.Sprintf("Invalid configuration, AutoTLS will be disabled: AutoTLS.Enabled=true requires a /tcp listener ending with %q to be present in Addresses.Swarm or AutoTLS.AutoWSS=true, see https://github.com/nnlgsakib/wwfs-node/blob/master/docs/config.md#autotls", wssWildcard))
 			enableAutoTLS = false
 		}
 	case enableAutoTLS && !enableTCPTransport:

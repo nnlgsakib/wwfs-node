@@ -18,8 +18,8 @@ import (
 	"bazil.org/fuse"
 	"bazil.org/fuse/fs"
 	"bazil.org/fuse/fs/fstestutil"
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/node"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/node"
 	"github.com/libp2p/go-libp2p-testing/ci"
 )
 

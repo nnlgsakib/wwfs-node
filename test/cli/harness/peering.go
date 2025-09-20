@@ -7,7 +7,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ipfs/kubo/config"
+	"github.com/nnlgsakib/wwfs-node/config"
 )
 
 type Peering struct {

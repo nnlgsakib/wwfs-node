@@ -7,8 +7,8 @@ import (
 	dag "github.com/nnlgsakib/wwfs-sdk/ipld/merkledag"
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	ipld "github.com/ipfs/go-ipld-format"
-	iface "github.com/ipfs/kubo/core/coreiface"
-	opt "github.com/ipfs/kubo/core/coreiface/options"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	opt "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	"github.com/stretchr/testify/require"
 )
 

@@ -12,16 +12,16 @@ import (
 
 	unixfs "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs"
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	assets "github.com/ipfs/kubo/assets"
-	oldcmds "github.com/ipfs/kubo/commands"
-	core "github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/commands"
-	fsrepo "github.com/ipfs/kubo/repo/fsrepo"
+	assets "github.com/nnlgsakib/wwfs-node/assets"
+	oldcmds "github.com/nnlgsakib/wwfs-node/commands"
+	core "github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/commands"
+	fsrepo "github.com/nnlgsakib/wwfs-node/repo/fsrepo"
 
 	"github.com/nnlgsakib/wwfs-sdk/files"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	config "github.com/ipfs/kubo/config"
-	options "github.com/ipfs/kubo/core/coreiface/options"
+	config "github.com/nnlgsakib/wwfs-node/config"
+	options "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 )
 
 const (

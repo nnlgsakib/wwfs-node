@@ -18,9 +18,9 @@ import (
 
 	"bazil.org/fuse"
 
-	core "github.com/ipfs/kubo/core"
-	coreapi "github.com/ipfs/kubo/core/coreapi"
-	coremock "github.com/ipfs/kubo/core/mock"
+	core "github.com/nnlgsakib/wwfs-node/core"
+	coreapi "github.com/nnlgsakib/wwfs-node/core/coreapi"
+	coremock "github.com/nnlgsakib/wwfs-node/core/mock"
 
 	fstest "bazil.org/fuse/fs/fstestutil"
 	chunker "github.com/nnlgsakib/wwfs-sdk/chunker"

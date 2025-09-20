@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	config "github.com/ipfs/kubo/config"
-	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
-	repo "github.com/ipfs/kubo/repo"
-	fsrepo "github.com/ipfs/kubo/repo/fsrepo"
+	config "github.com/nnlgsakib/wwfs-node/config"
+	cmdenv "github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	repo "github.com/nnlgsakib/wwfs-node/repo"
+	fsrepo "github.com/nnlgsakib/wwfs-node/repo/fsrepo"
 	peer "github.com/libp2p/go-libp2p/core/peer"
 	ma "github.com/multiformats/go-multiaddr"
 )

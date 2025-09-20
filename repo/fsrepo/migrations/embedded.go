@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	mg16 "github.com/ipfs/kubo/repo/fsrepo/migrations/fs-repo-16-to-17/migration"
+	mg16 "github.com/nnlgsakib/wwfs-node/repo/fsrepo/migrations/fs-repo-16-to-17/migration"
 )
 
 // EmbeddedMigration represents an embedded migration that can be run directly

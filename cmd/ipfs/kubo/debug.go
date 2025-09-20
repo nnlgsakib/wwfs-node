@@ -3,7 +3,7 @@ package kubo
 import (
 	"net/http"
 
-	"github.com/ipfs/kubo/profile"
+	"github.com/nnlgsakib/wwfs-node/profile"
 )
 
 func init() {

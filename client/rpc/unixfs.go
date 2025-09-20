@@ -14,8 +14,8 @@ import (
 	unixfs_pb "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs/pb"
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	"github.com/ipfs/go-cid"
-	iface "github.com/ipfs/kubo/core/coreiface"
-	caopts "github.com/ipfs/kubo/core/coreiface/options"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	caopts "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	mh "github.com/multiformats/go-multihash"
 )
 

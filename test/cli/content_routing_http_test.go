@@ -9,9 +9,9 @@ import (
 
 	"github.com/nnlgsakib/wwfs-sdk/routing/http/server"
 	"github.com/ipfs/go-test/random"
-	"github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/test/cli/harness"
-	"github.com/ipfs/kubo/test/cli/testutils/httprouting"
+	"github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
+	"github.com/nnlgsakib/wwfs-node/test/cli/testutils/httprouting"
 	"github.com/stretchr/testify/assert"
 )
 

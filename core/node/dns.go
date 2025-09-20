@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/nnlgsakib/wwfs-sdk/gateway"
-	config "github.com/ipfs/kubo/config"
+	config "github.com/nnlgsakib/wwfs-node/config"
 	doh "github.com/libp2p/go-doh-resolver"
 	madns "github.com/multiformats/go-multiaddr-dns"
 )

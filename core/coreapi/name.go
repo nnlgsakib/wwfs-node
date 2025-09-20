@@ -10,13 +10,13 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/ipns"
 	keystore "github.com/nnlgsakib/wwfs-sdk/keystore"
 	"github.com/nnlgsakib/wwfs-sdk/namesys"
-	"github.com/ipfs/kubo/tracing"
+	"github.com/nnlgsakib/wwfs-node/tracing"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
 
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
-	caopts "github.com/ipfs/kubo/core/coreiface/options"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	caopts "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	ci "github.com/libp2p/go-libp2p/core/crypto"
 	peer "github.com/libp2p/go-libp2p/core/peer"
 )

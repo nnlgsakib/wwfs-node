@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"io"
 
-	oldcmds "github.com/ipfs/kubo/commands"
-	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
-	nodeMount "github.com/ipfs/kubo/fuse/node"
+	oldcmds "github.com/nnlgsakib/wwfs-node/commands"
+	cmdenv "github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
+	nodeMount "github.com/nnlgsakib/wwfs-node/fuse/node"
 
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	config "github.com/ipfs/kubo/config"
+	config "github.com/nnlgsakib/wwfs-node/config"
 )
 
 const (

@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
 
 	ipldcbor "github.com/ipfs/go-ipld-cbor"
 	ipld "github.com/ipfs/go-ipld-format"

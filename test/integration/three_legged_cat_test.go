@@ -10,9 +10,9 @@ import (
 	"time"
 
 	bootstrap2 "github.com/nnlgsakib/wwfs-sdk/bootstrap"
-	"github.com/ipfs/kubo/core/coreapi"
-	mock "github.com/ipfs/kubo/core/mock"
-	"github.com/ipfs/kubo/thirdparty/unit"
+	"github.com/nnlgsakib/wwfs-node/core/coreapi"
+	mock "github.com/nnlgsakib/wwfs-node/core/mock"
+	"github.com/nnlgsakib/wwfs-node/thirdparty/unit"
 
 	"github.com/nnlgsakib/wwfs-sdk/files"
 	testutil "github.com/libp2p/go-libp2p-testing/net"

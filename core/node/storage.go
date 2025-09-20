@@ -4,13 +4,13 @@ import (
 	blockstore "github.com/nnlgsakib/wwfs-sdk/blockstore"
 	provider "github.com/nnlgsakib/wwfs-sdk/provider"
 	"github.com/ipfs/go-datastore"
-	config "github.com/ipfs/kubo/config"
+	config "github.com/nnlgsakib/wwfs-node/config"
 	"go.uber.org/fx"
 
 	"github.com/nnlgsakib/wwfs-sdk/filestore"
-	"github.com/ipfs/kubo/core/node/helpers"
-	"github.com/ipfs/kubo/repo"
-	"github.com/ipfs/kubo/thirdparty/verifbs"
+	"github.com/nnlgsakib/wwfs-node/core/node/helpers"
+	"github.com/nnlgsakib/wwfs-node/repo"
+	"github.com/nnlgsakib/wwfs-node/thirdparty/verifbs"
 )
 
 // RepoConfig loads configuration from the repo

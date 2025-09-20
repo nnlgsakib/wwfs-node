@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/nnlgsakib/wwfs-sdk/namesys"
-	"github.com/ipfs/kubo/tracing"
+	"github.com/nnlgsakib/wwfs-node/tracing"
 
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/trace"
@@ -14,7 +14,7 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	ipfspathresolver "github.com/nnlgsakib/wwfs-sdk/path/resolver"
 	ipld "github.com/ipfs/go-ipld-format"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
 )
 
 // ResolveNode resolves the path `p` using Unixfs resolver, gets and returns the

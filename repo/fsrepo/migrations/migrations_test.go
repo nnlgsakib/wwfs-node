@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	config "github.com/ipfs/kubo/config"
+	config "github.com/nnlgsakib/wwfs-node/config"
 )
 
 func TestFindMigrations(t *testing.T) {

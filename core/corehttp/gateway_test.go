@@ -10,17 +10,17 @@ import (
 	"testing"
 
 	"github.com/nnlgsakib/wwfs-sdk/namesys"
-	version "github.com/ipfs/kubo"
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/core/coreapi"
-	"github.com/ipfs/kubo/repo"
+	version "github.com/nnlgsakib/wwfs-node"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/core/coreapi"
+	"github.com/nnlgsakib/wwfs-node/repo"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	"github.com/ipfs/go-datastore"
 	syncds "github.com/ipfs/go-datastore/sync"
-	"github.com/ipfs/kubo/config"
-	iface "github.com/ipfs/kubo/core/coreiface"
+	"github.com/nnlgsakib/wwfs-node/config"
+	iface "github.com/nnlgsakib/wwfs-node/core/coreiface"
 	ci "github.com/libp2p/go-libp2p/core/crypto"
 )
 

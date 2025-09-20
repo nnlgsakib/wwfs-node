@@ -11,11 +11,11 @@ import (
 
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	cmdsHttp "github.com/nnlgsakib/go-wwfs-cmds/http"
-	version "github.com/ipfs/kubo"
-	oldcmds "github.com/ipfs/kubo/commands"
-	config "github.com/ipfs/kubo/config"
-	"github.com/ipfs/kubo/core"
-	corecommands "github.com/ipfs/kubo/core/commands"
+	version "github.com/nnlgsakib/wwfs-node"
+	oldcmds "github.com/nnlgsakib/wwfs-node/commands"
+	config "github.com/nnlgsakib/wwfs-node/config"
+	"github.com/nnlgsakib/wwfs-node/core"
+	corecommands "github.com/nnlgsakib/wwfs-node/core/commands"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 

@@ -5,8 +5,8 @@ import (
 	"sort"
 	"time"
 
-	version "github.com/ipfs/kubo"
-	config "github.com/ipfs/kubo/config"
+	version "github.com/nnlgsakib/wwfs-node"
+	config "github.com/nnlgsakib/wwfs-node/config"
 
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/libp2p/go-libp2p"

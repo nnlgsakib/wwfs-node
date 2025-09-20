@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ipfs/kubo/test/cli/harness"
+	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -20,7 +20,7 @@ func TestCidCommands(t *testing.T) {
 }
 
 // testCidBase32 tests 'ipfs cid base32' subcommand
-// Includes regression tests for https://github.com/ipfs/kubo/issues/9007
+// Includes regression tests for https://github.com/nnlgsakib/wwfs-node/issues/9007
 func testCidBase32(t *testing.T) {
 	t.Parallel()
 	node := harness.NewT(t).NewNode()
@@ -58,7 +58,7 @@ func testCidBase32(t *testing.T) {
 	})
 
 	t.Run("error handling", func(t *testing.T) {
-		// Regression tests for https://github.com/ipfs/kubo/issues/9007
+		// Regression tests for https://github.com/nnlgsakib/wwfs-node/issues/9007
 		t.Run("returns error code 1 for single invalid CID", func(t *testing.T) {
 			res := node.RunIPFS("cid", "base32", "invalid-cid")
 			assert.Equal(t, 1, res.ExitCode())
@@ -89,7 +89,7 @@ func testCidBase32(t *testing.T) {
 }
 
 // testCidFormat tests 'ipfs cid format' subcommand
-// Includes regression tests for https://github.com/ipfs/kubo/issues/9007
+// Includes regression tests for https://github.com/nnlgsakib/wwfs-node/issues/9007
 func testCidFormat(t *testing.T) {
 	t.Parallel()
 	node := harness.NewT(t).NewNode()
@@ -136,7 +136,7 @@ func testCidFormat(t *testing.T) {
 	})
 
 	t.Run("error handling", func(t *testing.T) {
-		// Regression tests for https://github.com/ipfs/kubo/issues/9007
+		// Regression tests for https://github.com/nnlgsakib/wwfs-node/issues/9007
 		t.Run("returns error code 1 for single invalid CID", func(t *testing.T) {
 			res := node.RunIPFS("cid", "format", "not-a-cid")
 			assert.Equal(t, 1, res.ExitCode())

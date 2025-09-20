@@ -7,7 +7,7 @@ import (
 
 	dag "github.com/nnlgsakib/wwfs-sdk/ipld/merkledag"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	coremock "github.com/ipfs/kubo/core/mock"
+	coremock "github.com/nnlgsakib/wwfs-node/core/mock"
 	"github.com/stretchr/testify/require"
 )
 

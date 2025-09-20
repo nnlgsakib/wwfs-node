@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/ipfs/kubo/config"
+	"github.com/nnlgsakib/wwfs-node/config"
 
 	"github.com/facebookgo/atomicfile"
 )

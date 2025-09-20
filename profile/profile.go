@@ -15,7 +15,7 @@ import (
 	"time"
 
 	"github.com/ipfs/go-log/v2"
-	version "github.com/ipfs/kubo"
+	version "github.com/nnlgsakib/wwfs-node"
 )
 
 const (

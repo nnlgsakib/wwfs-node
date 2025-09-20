@@ -9,11 +9,11 @@ import (
 	"strings"
 	"sync"
 
-	core "github.com/ipfs/kubo/core"
-	ipns "github.com/ipfs/kubo/fuse/ipns"
-	mfs "github.com/ipfs/kubo/fuse/mfs"
-	mount "github.com/ipfs/kubo/fuse/mount"
-	rofs "github.com/ipfs/kubo/fuse/readonly"
+	core "github.com/nnlgsakib/wwfs-node/core"
+	ipns "github.com/nnlgsakib/wwfs-node/fuse/ipns"
+	mfs "github.com/nnlgsakib/wwfs-node/fuse/mfs"
+	mount "github.com/nnlgsakib/wwfs-node/fuse/mount"
+	rofs "github.com/nnlgsakib/wwfs-node/fuse/readonly"
 
 	logging "github.com/ipfs/go-log/v2"
 )

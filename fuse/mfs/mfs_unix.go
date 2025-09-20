@@ -18,7 +18,7 @@ import (
 	dag "github.com/nnlgsakib/wwfs-sdk/ipld/merkledag"
 	ft "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs"
 	"github.com/nnlgsakib/wwfs-sdk/mfs"
-	"github.com/ipfs/kubo/core"
+	"github.com/nnlgsakib/wwfs-node/core"
 )
 
 const (

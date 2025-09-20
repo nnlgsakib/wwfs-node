@@ -11,7 +11,7 @@ import (
 	ft "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs"
 	importer "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs/importer"
 	uio "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs/io"
-	core "github.com/ipfs/kubo/core"
+	core "github.com/nnlgsakib/wwfs-node/core"
 
 	bstore "github.com/nnlgsakib/wwfs-sdk/blockstore"
 	chunker "github.com/nnlgsakib/wwfs-sdk/chunker"

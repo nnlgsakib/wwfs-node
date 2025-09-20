@@ -6,7 +6,7 @@ import (
 	ft "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs"
 	"github.com/nnlgsakib/wwfs-sdk/namesys"
 	"github.com/nnlgsakib/wwfs-sdk/path"
-	"github.com/ipfs/kubo/core"
+	"github.com/nnlgsakib/wwfs-node/core"
 	ci "github.com/libp2p/go-libp2p/core/crypto"
 )
 

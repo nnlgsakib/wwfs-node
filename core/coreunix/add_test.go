@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ipfs/kubo/core"
-	"github.com/ipfs/kubo/gc"
-	"github.com/ipfs/kubo/repo"
+	"github.com/nnlgsakib/wwfs-node/core"
+	"github.com/nnlgsakib/wwfs-node/gc"
+	"github.com/nnlgsakib/wwfs-node/repo"
 
 	"github.com/nnlgsakib/wwfs-sdk/blockservice"
 	blockstore "github.com/nnlgsakib/wwfs-sdk/blockstore"
@@ -23,8 +23,8 @@ import (
 	"github.com/ipfs/go-cid"
 	"github.com/ipfs/go-datastore"
 	syncds "github.com/ipfs/go-datastore/sync"
-	config "github.com/ipfs/kubo/config"
-	coreiface "github.com/ipfs/kubo/core/coreiface"
+	config "github.com/nnlgsakib/wwfs-node/config"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
 )
 
 const testPeerID = "QmTFauExutTsy4XP6JbMFcw2Wa9645HJt2bTqL6qYDCKfe"
