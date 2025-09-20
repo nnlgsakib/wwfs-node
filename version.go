@@ -9,7 +9,7 @@ import (
 var CurrentCommit string
 
 // CurrentVersionNumber is the current application's version literal.
-const CurrentVersionNumber = "0.38.0-dev"
+const CurrentVersionNumber = "1.0.1"
 
 const ApiVersion = "/kubo/" + CurrentVersionNumber + "/" //nolint
 
@@ -20,13 +20,7 @@ const RepoVersion = 17
 //
 // Note: This will end in `/` when no commit is available. This is expected.
 func GetUserAgentVersion() string {
-	userAgent := "kubo/" + CurrentVersionNumber + "/" + CurrentCommit
-	if userAgentSuffix != "" {
-		if CurrentCommit != "" {
-			userAgent += "/"
-		}
-		userAgent += userAgentSuffix
-	}
+	userAgent := "wwfs " + CurrentVersionNumber
 	return userAgent
 }
 
