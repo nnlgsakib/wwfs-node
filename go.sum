@@ -511,8 +511,8 @@ github.com/libp2p/go-libp2p-http v0.5.0/go.mod h1:glh87nZ35XCQyFsdzZps6+F4HYI6Dc
 github.com/libp2p/go-libp2p-kad-dht v0.34.0 h1:yvJ/Vrt36GVjsqPxiGcuuwOloKuZLV9Aa7awIKyNXy0=
 github.com/libp2p/go-libp2p-kad-dht v0.34.0/go.mod h1:JNbkES4W5tajS6uYivw6MPs0842cPHAwhgaPw8sQG4o=
 github.com/libp2p/go-libp2p-kbucket v0.3.1/go.mod h1:oyjT5O7tS9CQurok++ERgc46YLwEpuGoFq9ubvoUOio=
-github.com/libp2p/go-libp2p-kbucket v0.7.0 h1:vYDvRjkyJPeWunQXqcW2Z6E93Ywx7fX0jgzb/dGOKCs=
-github.com/libp2p/go-libp2p-kbucket v0.7.0/go.mod h1:blOINGIj1yiPYlVEX0Rj9QwEkmVnz3EP8LK1dRKBC6g=
+github.com/libp2p/go-libp2p-kbucket v0.8.0 h1:QAK7RzKJpYe+EuSEATAaaHYMYLkPDGC18m9jxPLnU8s=
+github.com/libp2p/go-libp2p-kbucket v0.8.0/go.mod h1:JMlxqcEyKwO6ox716eyC0hmiduSWZZl6JY93mGaaqc4=
 github.com/libp2p/go-libp2p-peerstore v0.1.4/go.mod h1:+4BDbDiiKf4PzpANZDAT+knVdLxvqh7hXOujessqdzs=
 github.com/libp2p/go-libp2p-pubsub v0.14.2 h1:nT5lFHPQOFJcp9CW8hpKtvbpQNdl2udJuzLQWbgRum8=
 github.com/libp2p/go-libp2p-pubsub v0.14.2/go.mod h1:MKPU5vMI8RRFyTP0HfdsF9cLmL1nHAeJm44AxJGJx44=
@@ -641,6 +641,8 @@ github.com/neelance/astrewrite v0.0.0-20160511093645-99348263ae86/go.mod h1:kHJE
 github.com/neelance/sourcemap v0.0.0-20151028013722-8c68805598ab/go.mod h1:Qr6/a/Q4r9LP1IltGz7tA7iOK1WonHEYhu1HRBA7ZiM=
 github.com/nnlgsakib/go-wwfs-cmds v0.15.0 h1:Re4jCbRj/RTrwAvy9humN6qH10xHO/CMYbuogPJzgWY=
 github.com/nnlgsakib/go-wwfs-cmds v0.15.0/go.mod h1:GVsSYIRfsz2wAvNDF4fsFXz8YPobnJRmAvRnB+Ya+9s=
+github.com/nnlgsakib/kad-dht-wwfs v1.0.1 h1:/oB3DcxsF0rU05AQql8PxlUneSKr2QQEbA+qNM8V2Ww=
+github.com/nnlgsakib/kad-dht-wwfs v1.0.1/go.mod h1:fDp5zh5NMgC/OCM0SRGotiQlZ7DmtE4w8b/VdVzZpiM=
 github.com/nnlgsakib/nopfs-wwfs v0.0.0-20250920035742-755dde3dad3d h1:7fIgKfpoA2GBsOcryPdkmmHwMqR2KQs3jwrRcVpEyro=
 github.com/nnlgsakib/nopfs-wwfs v0.0.0-20250920035742-755dde3dad3d/go.mod h1:Ir4BrXatzewfjrI5j5nbnQnix03dOMlSlAkH3iY5WT4=
 github.com/nnlgsakib/nopfs-wwfs/ipfs v0.0.0-20250920035742-755dde3dad3d h1:rKuKkP5yebPSALzMiG7ZCSYa+2cVqbBnW23v0MyUlko=

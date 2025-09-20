@@ -10,7 +10,7 @@ import (
 	"github.com/nnlgsakib/wwfs-sdk/provider"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	"github.com/ipfs/kubo/core/commands/cmdenv"
-	"github.com/libp2p/go-libp2p-kad-dht/fullrt"
+	"github.com/nnlgsakib/kad-dht-wwfs/fullrt"
 	"golang.org/x/exp/constraints"
 )
 

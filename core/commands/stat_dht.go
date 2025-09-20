@@ -9,8 +9,8 @@ import (
 	cmdenv "github.com/ipfs/kubo/core/commands/cmdenv"
 
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	dht "github.com/libp2p/go-libp2p-kad-dht"
-	"github.com/libp2p/go-libp2p-kad-dht/fullrt"
+	dht "github.com/nnlgsakib/kad-dht-wwfs"
+	"github.com/nnlgsakib/kad-dht-wwfs/fullrt"
 	kbucket "github.com/libp2p/go-libp2p-kbucket"
 	"github.com/libp2p/go-libp2p/core/network"
 	pstore "github.com/libp2p/go-libp2p/core/peerstore"

@@ -29,7 +29,7 @@ import (
 	provider "github.com/nnlgsakib/wwfs-sdk/provider"
 	ipld "github.com/ipfs/go-ipld-format"
 	logging "github.com/ipfs/go-log/v2"
-	ddht "github.com/libp2p/go-libp2p-kad-dht/dual"
+	ddht "github.com/nnlgsakib/kad-dht-wwfs/dual"
 	pubsub "github.com/libp2p/go-libp2p-pubsub"
 	psrouter "github.com/libp2p/go-libp2p-pubsub-router"
 	record "github.com/libp2p/go-libp2p-record"
