@@ -9,8 +9,8 @@ import (
 	ocmd "github.com/nnlgsakib/wwfs-node/core/commands/object"
 	"github.com/nnlgsakib/wwfs-node/core/commands/pin"
 
-	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	logging "github.com/ipfs/go-log/v2"
+	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 )
 
 var log = logging.Logger("core/commands")
@@ -88,10 +88,10 @@ TOOL COMMANDS
 Use 'ipfs <command> --help' to learn more about each command.
 
 ipfs uses a repository in the local file system. By default, the repo is
-located at ~/.ipfs. To change the repo location, set the $IPFS_PATH
+located at ~/.wwfs. To change the repo location, set the $WWFS_PATH
 environment variable:
 
-  export IPFS_PATH=/path/to/ipfsrepo
+  export WWFS_PATH=/path/to/wwfsrepo
 
 EXIT STATUS
 

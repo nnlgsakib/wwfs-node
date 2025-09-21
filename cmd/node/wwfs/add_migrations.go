@@ -1,4 +1,4 @@
-package kubo
+package wwfs
 
 import (
 	"context"
@@ -8,15 +8,15 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/nnlgsakib/wwfs-sdk/files"
-	"github.com/nnlgsakib/wwfs-sdk/path"
+	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/nnlgsakib/wwfs-node/core"
 	"github.com/nnlgsakib/wwfs-node/core/coreapi"
 	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
 	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	"github.com/nnlgsakib/wwfs-node/repo/fsrepo/migrations"
 	"github.com/nnlgsakib/wwfs-node/repo/fsrepo/migrations/ipfsfetcher"
-	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/nnlgsakib/wwfs-sdk/files"
+	"github.com/nnlgsakib/wwfs-sdk/path"
 )
 
 // addMigrations adds any migration downloaded by the fetcher to the IPFS node.

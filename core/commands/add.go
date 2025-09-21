@@ -13,15 +13,15 @@ import (
 	"github.com/nnlgsakib/wwfs-node/core/commands/cmdenv"
 
 	"github.com/cheggaaa/pb"
+	ipld "github.com/ipfs/go-ipld-format"
+	mh "github.com/multiformats/go-multihash"
+	cmds "github.com/nnlgsakib/go-wwfs-cmds"
+	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
+	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	"github.com/nnlgsakib/wwfs-sdk/files"
 	mfs "github.com/nnlgsakib/wwfs-sdk/mfs"
 	"github.com/nnlgsakib/wwfs-sdk/path"
 	"github.com/nnlgsakib/wwfs-sdk/verifcid"
-	cmds "github.com/nnlgsakib/go-wwfs-cmds"
-	ipld "github.com/ipfs/go-ipld-format"
-	coreiface "github.com/nnlgsakib/wwfs-node/core/coreiface"
-	"github.com/nnlgsakib/wwfs-node/core/coreiface/options"
-	mh "github.com/multiformats/go-multihash"
 )
 
 // ErrDepthLimitExceeded indicates that the max depth has been exceeded.
@@ -80,7 +80,7 @@ Adds the content of <path> to IPFS. Use -r to add directories.
 Note that directories are added recursively, and big files are chunked,
 to form the IPFS MerkleDAG. Learn more: https://docs.ipfs.tech/concepts/merkle-dag/
 
-If the daemon is not running, it will just add locally to the repo at $IPFS_PATH.
+If the daemon is not running, it will just add locally to the repo at $WWFS_PATH.
 If the daemon is started later, it will be advertised after a few
 seconds when the reprovider runs.
 

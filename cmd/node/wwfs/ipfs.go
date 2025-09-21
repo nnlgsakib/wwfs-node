@@ -1,4 +1,4 @@
-package kubo
+package wwfs
 
 import (
 	commands "github.com/nnlgsakib/wwfs-node/core/commands"

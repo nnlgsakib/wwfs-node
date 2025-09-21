@@ -1,3 +1,3 @@
-[submodule "cmd/ipfs/wwfs-webui"]
-	path = cmd/ipfs/wwfs-webui
+[submodule "cmd/node/wwfs-webui"]
+	path = cmd/node/wwfs-webui
 	url = https://github.com/nnlgsakib/wwfs-webui

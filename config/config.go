@@ -57,7 +57,7 @@ const (
 	// DefaultConfigFile is the filename of the configuration file.
 	DefaultConfigFile = "config"
 	// EnvDir is the environment variable used to change the path root.
-	EnvDir = "IPFS_PATH"
+	EnvDir = "WWFS_PATH"
 )
 
 // PathRoot returns the default configuration root directory.

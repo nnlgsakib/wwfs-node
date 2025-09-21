@@ -387,7 +387,7 @@ func setupStaticV16Repo(t *testing.T) *harness.Node {
 	// Use the built binary (should be in PATH)
 	node := harness.BuildNode("ipfs", absTmpDir, 0)
 
-	// Replace IPFS_PATH with static fixture files to test directory (creates independent copy per test)
+	// Replace WWFS_PATH with static fixture files to test directory (creates independent copy per test)
 	cloneStaticRepoFixture(t, v16FixturePath, node.Dir)
 
 	return node
@@ -585,7 +585,7 @@ func runDaemonWithMigrationMonitoring(t *testing.T, node *harness.Node, migratio
 	cmd := exec.CommandContext(ctx, node.IPFSBin, "daemon", "--migrate")
 	cmd.Dir = node.Dir
 
-	// Set environment (especially IPFS_PATH)
+	// Set environment (especially WWFS_PATH)
 	for k, v := range node.Runner.Env {
 		cmd.Env = append(cmd.Env, k+"="+v)
 	}

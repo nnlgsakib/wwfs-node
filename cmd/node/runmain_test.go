@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/nnlgsakib/wwfs-node/cmd/ipfs/kubo"
+	"github.com/nnlgsakib/wwfs-node/cmd/node/wwfs"
 )
 
 // this abuses go so much that I felt dirty writing this code

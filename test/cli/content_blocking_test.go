@@ -13,11 +13,11 @@ import (
 	"testing"
 
 	"github.com/ipfs/go-cid"
-	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
 	carstore "github.com/ipld/go-car/v2/blockstore"
 	"github.com/libp2p/go-libp2p"
 	"github.com/libp2p/go-libp2p/core/peer"
 	libp2phttp "github.com/libp2p/go-libp2p/p2p/http"
+	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -32,7 +32,7 @@ func TestContentBlocking(t *testing.T) {
 
 	h := harness.NewT(t)
 
-	// Init IPFS_PATH
+	// Init WWFS_PATH
 	node := h.NewNode().Init("--empty-repo", "--profile=test")
 
 	// Create CIDs we use in test
@@ -47,7 +47,7 @@ func TestContentBlocking(t *testing.T) {
 	h.WriteFile("not-blocked-file.txt", "not blocked file content")
 	allowedCID := node.IPFS("add", "--raw-leaves", "-Q", filepath.Join(h.Dir, "not-blocked-file.txt")).Stdout.Trimmed()
 
-	// Create denylist at $IPFS_PATH/denylists/test.deny
+	// Create denylist at $WWFS_PATH/denylists/test.deny
 	denylistTmp := h.WriteToTemp("name: test list\n---\n" +
 		"//QmX9dhRcQcKUw3Ws8485T5a9dtjrSCQaUAHnG4iK9i4ceM\n" + // Double hash (sha256) CID block: base58btc(sha256-multihash(QmVTF1yEejXd9iMgoRTFDxBv7HAz9kuZcQNBzHrceuK9HR))
 		"//gW813G35CnLsy7gRYYHuf63hrz71U1xoLFDVeV7actx6oX\n" + // Double hash (blake3) Path block under blake3 root CID: base58btc(blake3-multihash(gW7Nhu4HrfDtphEivm3Z9NNE7gpdh5Tga8g6JNZc1S8E47/path))
@@ -74,7 +74,7 @@ func TestContentBlocking(t *testing.T) {
 	// Enable GatewayOverLibp2p as we want to test denylist there too
 	node.IPFS("config", "--json", "Experimental.GatewayOverLibp2p", "true")
 
-	// Start daemon, it should pick up denylist from $IPFS_PATH/denylists/test.deny
+	// Start daemon, it should pick up denylist from $WWFS_PATH/denylists/test.deny
 	node.StartDaemon() // we need online mode for GatewayOverLibp2p tests
 	client := node.GatewayClient()
 

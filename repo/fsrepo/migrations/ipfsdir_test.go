@@ -44,7 +44,7 @@ func testIpfsDir(t *testing.T, fakeIpfs string) {
 		t.Fatalf("wrong ipfs directory: got %s, expected %s", dir, fakeIpfs)
 	}
 
-	t.Setenv(config.EnvDir, "~/.ipfs")
+	t.Setenv(config.EnvDir, "~/.wwfs")
 	dir, err = IpfsDir("")
 	if err != nil {
 		t.Fatal(err)
@@ -68,7 +68,7 @@ func testIpfsDir(t *testing.T, fakeIpfs string) {
 		panic(err)
 	}
 
-	dir, err = IpfsDir("~/.ipfs")
+	dir, err = IpfsDir("~/.wwfs")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -93,7 +93,7 @@ func testCheckIpfsDir(t *testing.T, fakeIpfs string) {
 		t.Fatal("expected error from nonexistent directory")
 	}
 
-	dir, err := CheckIpfsDir("~/.ipfs")
+	dir, err := CheckIpfsDir("~/.wwfs")
 	if err != nil {
 		t.Fatal(err)
 	}

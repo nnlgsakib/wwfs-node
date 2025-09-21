@@ -18,7 +18,7 @@ const (
 
 // IpfsDir returns the path of the ipfs directory.  If dir specified, then
 // returns the expanded version dir.  If dir is "", then return the directory
-// set by IPFS_PATH, or if IPFS_PATH is not set, then return the default
+// set by WWFS_PATH, or if WWFS_PATH is not set, then return the default
 // location in the home directory.
 func IpfsDir(dir string) (string, error) {
 	var err error

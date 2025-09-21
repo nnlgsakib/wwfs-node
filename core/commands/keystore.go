@@ -13,7 +13,9 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	keystore "github.com/nnlgsakib/wwfs-sdk/keystore"
+	"github.com/libp2p/go-libp2p/core/crypto"
+	peer "github.com/libp2p/go-libp2p/core/peer"
+	mbase "github.com/multiformats/go-multibase"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	oldcmds "github.com/nnlgsakib/wwfs-node/commands"
 	config "github.com/nnlgsakib/wwfs-node/config"
@@ -23,9 +25,7 @@ import (
 	options "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
 	fsrepo "github.com/nnlgsakib/wwfs-node/repo/fsrepo"
 	migrations "github.com/nnlgsakib/wwfs-node/repo/fsrepo/migrations"
-	"github.com/libp2p/go-libp2p/core/crypto"
-	peer "github.com/libp2p/go-libp2p/core/peer"
-	mbase "github.com/multiformats/go-multibase"
+	keystore "github.com/nnlgsakib/wwfs-sdk/keystore"
 )
 
 var KeyCmd = &cmds.Command{
@@ -596,10 +596,10 @@ Your existing identity key will be backed up in the Keystore.
 The daemon must not be running when calling this command.
 
 ipfs uses a repository in the local file system. By default, the repo is
-located at ~/.ipfs. To change the repo location, set the $IPFS_PATH
+located at ~/.wwfs. To change the repo location, set the $WWFS_PATH
 environment variable:
 
-    export IPFS_PATH=/path/to/ipfsrepo
+    export WWFS_PATH=/path/to/wwfsrepo
 `,
 	},
 	Arguments: []cmds.Argument{},

@@ -1,4 +1,4 @@
-package kubo
+package wwfs
 
 import (
 	"context"
@@ -10,18 +10,18 @@ import (
 	"path/filepath"
 	"strings"
 
-	unixfs "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs"
-	"github.com/nnlgsakib/wwfs-sdk/path"
 	assets "github.com/nnlgsakib/wwfs-node/assets"
 	oldcmds "github.com/nnlgsakib/wwfs-node/commands"
 	core "github.com/nnlgsakib/wwfs-node/core"
 	"github.com/nnlgsakib/wwfs-node/core/commands"
 	fsrepo "github.com/nnlgsakib/wwfs-node/repo/fsrepo"
+	unixfs "github.com/nnlgsakib/wwfs-sdk/ipld/unixfs"
+	"github.com/nnlgsakib/wwfs-sdk/path"
 
-	"github.com/nnlgsakib/wwfs-sdk/files"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	config "github.com/nnlgsakib/wwfs-node/config"
 	options "github.com/nnlgsakib/wwfs-node/core/coreiface/options"
+	"github.com/nnlgsakib/wwfs-sdk/files"
 )
 
 const (
@@ -50,10 +50,10 @@ initialize it using 'server' profile.
 For the list of available profiles see 'ipfs config profile --help'
 
 ipfs uses a repository in the local file system. By default, the repo is
-located at ~/.ipfs. To change the repo location, set the $IPFS_PATH
+located at ~/.wwfs. To change the repo location, set the $WWFS_PATH
 environment variable:
 
-    export IPFS_PATH=/path/to/ipfsrepo
+    export WWFS_PATH=/path/to/ipfsrepo
 `,
 	},
 	Arguments: []cmds.Argument{

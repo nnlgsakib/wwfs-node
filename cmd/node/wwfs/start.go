@@ -1,5 +1,5 @@
 // cmd/ipfs/kubo implements the primary CLI binary for kubo
-package kubo
+package wwfs
 
 import (
 	"bytes"
@@ -16,14 +16,16 @@ import (
 	"time"
 
 	"github.com/blang/semver/v4"
-	u "github.com/nnlgsakib/wwfs-sdk/util"
+	logging "github.com/ipfs/go-log/v2"
+	ma "github.com/multiformats/go-multiaddr"
+	madns "github.com/multiformats/go-multiaddr-dns"
+	manet "github.com/multiformats/go-multiaddr/net"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
 	"github.com/nnlgsakib/go-wwfs-cmds/cli"
 	cmdhttp "github.com/nnlgsakib/go-wwfs-cmds/http"
-	logging "github.com/ipfs/go-log/v2"
 	ipfs "github.com/nnlgsakib/wwfs-node"
 	"github.com/nnlgsakib/wwfs-node/client/rpc/auth"
-	"github.com/nnlgsakib/wwfs-node/cmd/ipfs/util"
+	"github.com/nnlgsakib/wwfs-node/cmd/node/util"
 	oldcmds "github.com/nnlgsakib/wwfs-node/commands"
 	config "github.com/nnlgsakib/wwfs-node/config"
 	"github.com/nnlgsakib/wwfs-node/core"
@@ -33,9 +35,7 @@ import (
 	"github.com/nnlgsakib/wwfs-node/repo"
 	"github.com/nnlgsakib/wwfs-node/repo/fsrepo"
 	"github.com/nnlgsakib/wwfs-node/tracing"
-	ma "github.com/multiformats/go-multiaddr"
-	madns "github.com/multiformats/go-multiaddr-dns"
-	manet "github.com/multiformats/go-multiaddr/net"
+	u "github.com/nnlgsakib/wwfs-sdk/util"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 	"go.opentelemetry.io/contrib/propagators/autoprop"
 	"go.opentelemetry.io/otel"
@@ -46,7 +46,7 @@ import (
 
 // log is the command logger.
 var (
-	log    = logging.Logger("cmd/ipfs")
+	log    = logging.Logger("cmd/node")
 	tracer trace.Tracer
 )
 

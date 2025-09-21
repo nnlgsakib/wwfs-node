@@ -20,7 +20,7 @@ for /f %%i in ('git rev-parse --short HEAD') do set GIT_COMMIT=%%i
 echo Building wwfs-node for Windows amd64...
 go build -trimpath ^
   -ldflags="-X github.com/ipfs/kubo.CurrentCommit=%GIT_COMMIT% -X github.com/nnlgsakib/wwfs-node.CurrentCommit=%GIT_COMMIT%" ^
-  -o bin\wwfs.exe github.com/nnlgsakib/wwfs-node/cmd/ipfs
+  -o bin\wwfs.exe github.com/nnlgsakib/wwfs-node/cmd/node
 
 if %ERRORLEVEL% neq 0 (
     echo Build FAILED!

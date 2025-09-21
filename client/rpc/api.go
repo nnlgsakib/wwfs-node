@@ -32,7 +32,7 @@ const (
 	DefaultPathName = ".wwfs"
 	DefaultPathRoot = "~/" + DefaultPathName
 	DefaultApiFile  = "api"
-	EnvDir          = "IPFS_PATH"
+	EnvDir          = "WWFS_PATH"
 )
 
 // ErrApiNotFound if we fail to find a running daemon.
@@ -56,8 +56,8 @@ type HttpApi struct {
 // NewLocalApi tries to construct new HttpApi instance communicating with local
 // IPFS daemon
 //
-// Daemon api address is pulled from the $IPFS_PATH/api file.
-// If $IPFS_PATH env var is not present, it defaults to ~/.ipfs.
+// Daemon api address is pulled from the $WWFS_PATH/api file.
+// If $WWFS_PATH env var is not present, it defaults to ~/.wwfs.
 func NewLocalApi() (*HttpApi, error) {
 	baseDir := os.Getenv(EnvDir)
 	if baseDir == "" {

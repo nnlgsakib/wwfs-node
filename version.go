@@ -1,4 +1,4 @@
-package ipfs
+package mwwfs
 
 import (
 	"fmt"

@@ -37,13 +37,13 @@ include $(dir)/Rules.mk
 dir := test
 include $(dir)/Rules.mk
 
-dir := cmd/ipfs
+dir := cmd/node
 include $(dir)/Rules.mk
 
 # include this file only if coverage target is executed
 # it is quite expensive
 ifneq ($(filter coverage% clean distclean test/unit/gotest.junit.xml,$(MAKECMDGOALS)),)
-	# has to be after cmd/ipfs due to PATH
+	# has to be after cmd/node due to PATH
 	dir := coverage
 	include $(dir)/Rules.mk
 endif
@@ -103,7 +103,7 @@ install_unsupported: install
 .PHONY: install_unsupported
 
 uninstall:
-	$(GOCC) clean -i ./cmd/ipfs
+	$(GOCC) clean -i ./cmd/node
 .PHONY: uninstall
 
 supported:

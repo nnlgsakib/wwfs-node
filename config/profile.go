@@ -145,7 +145,7 @@ You should use this datastore if:
 See configuration documentation at:
 https://github.com/nnlgsakib/wwfs-node/blob/master/docs/datastores.md#flatfs
 
-NOTE: This profile may only be applied when first initializing node at IPFS_PATH
+NOTE: This profile may only be applied when first initializing node at WWFS_PATH
       via 'ipfs init --profile flatfs'
 `,
 
@@ -159,7 +159,7 @@ NOTE: This profile may only be applied when first initializing node at IPFS_PATH
 		Description: `Configures the node to use the flatfs datastore with metrics tracking wrapper.
 Additional '*_datastore_*' metrics will be exposed on /debug/metrics/prometheus
 
-NOTE: This profile may only be applied when first initializing node at IPFS_PATH
+NOTE: This profile may only be applied when first initializing node at WWFS_PATH
       via 'ipfs init --profile flatfs-measure'
 `,
 
@@ -185,7 +185,7 @@ You should use this datastore if:
 See configuration documentation at:
 https://github.com/nnlgsakib/wwfs-node/blob/master/docs/datastores.md#pebbleds
 
-NOTE: This profile may only be applied when first initializing node at IPFS_PATH
+NOTE: This profile may only be applied when first initializing node at WWFS_PATH
       via 'ipfs init --profile pebbleds'
 `,
 
@@ -199,7 +199,7 @@ NOTE: This profile may only be applied when first initializing node at IPFS_PATH
 		Description: `Configures the node to use the pebble datastore with metrics tracking wrapper.
 Additional '*_datastore_*' metrics will be exposed on /debug/metrics/prometheus
 
-NOTE: This profile may only be applied when first initializing node at IPFS_PATH
+NOTE: This profile may only be applied when first initializing node at WWFS_PATH
       via 'ipfs init --profile pebbleds-measure'
 `,
 
@@ -228,7 +228,7 @@ Other caveats:
 See configuration documentation at:
 https://github.com/nnlgsakib/wwfs-node/blob/master/docs/datastores.md#badgerds
 
-NOTE: This profile may only be applied when first initializing node at IPFS_PATH
+NOTE: This profile may only be applied when first initializing node at WWFS_PATH
       via 'ipfs init --profile badgerds'
 `,
 
@@ -242,7 +242,7 @@ NOTE: This profile may only be applied when first initializing node at IPFS_PATH
 		Description: `Configures the node to use the legacy badgerv1 datastore with metrics wrapper.
 Additional '*_datastore_*' metrics will be exposed on /debug/metrics/prometheus
 
-NOTE: This profile may only be applied when first initializing node at IPFS_PATH
+NOTE: This profile may only be applied when first initializing node at WWFS_PATH
       via 'ipfs init --profile badgerds-measure'
 `,
 

@@ -43,7 +43,7 @@ func main() {
 
 	// precedence
 	// 1. --repo flag
-	// 2. IPFS_PATH environment variable
+	// 2. WWFS_PATH environment variable
 	// 3. default repo path
 	var ipfsPath string
 	if *repoPath != "" {

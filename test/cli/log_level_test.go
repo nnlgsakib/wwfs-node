@@ -370,21 +370,21 @@ func TestLogLevel(t *testing.T) {
 			// This tests the behavior documented in help text: '*' or "*" or \*
 
 			// Test 1: Single quotes '*' (should work)
-			cmd1 := fmt.Sprintf("IPFS_PATH='%s' %s --api='%s' log level '*' info",
+			cmd1 := fmt.Sprintf("WWFS_PATH='%s' %s --api='%s' log level '*' info",
 				node.Dir, node.IPFSBin, node.APIAddr())
 			res1 := h.Sh(cmd1)
 			assert.NoError(t, res1.Err)
 			assert.Contains(t, res1.Stdout.String(), "Changed log level of '*' to 'info'")
 
 			// Test 2: Double quotes "*" (should work)
-			cmd2 := fmt.Sprintf("IPFS_PATH='%s' %s --api='%s' log level \"*\" debug",
+			cmd2 := fmt.Sprintf("WWFS_PATH='%s' %s --api='%s' log level \"*\" debug",
 				node.Dir, node.IPFSBin, node.APIAddr())
 			res2 := h.Sh(cmd2)
 			assert.NoError(t, res2.Err)
 			assert.Contains(t, res2.Stdout.String(), "Changed log level of '*' to 'debug'")
 
 			// Test 3: Backslash escape \* (should work)
-			cmd3 := fmt.Sprintf("IPFS_PATH='%s' %s --api='%s' log level \\* warn",
+			cmd3 := fmt.Sprintf("WWFS_PATH='%s' %s --api='%s' log level \\* warn",
 				node.Dir, node.IPFSBin, node.APIAddr())
 			res3 := h.Sh(cmd3)
 			assert.NoError(t, res3.Err)
@@ -396,7 +396,7 @@ func TestLogLevel(t *testing.T) {
 			assert.Equal(t, "warn", strings.TrimSpace(res4.Stdout.String()))
 
 			// Test 5: Get all levels using escaped '*' to verify it shows all subsystems
-			cmd5 := fmt.Sprintf("IPFS_PATH='%s' %s --api='%s' log level \\*",
+			cmd5 := fmt.Sprintf("WWFS_PATH='%s' %s --api='%s' log level \\*",
 				node.Dir, node.IPFSBin, node.APIAddr())
 			res5 := h.Sh(cmd5)
 			assert.NoError(t, res5.Err)

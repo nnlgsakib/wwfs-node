@@ -18,12 +18,12 @@ import (
 	"time"
 
 	logging "github.com/ipfs/go-log/v2"
-	"github.com/nnlgsakib/wwfs-node/config"
-	serial "github.com/nnlgsakib/wwfs-node/config/serialize"
 	"github.com/libp2p/go-libp2p/core/peer"
 	rcmgr "github.com/libp2p/go-libp2p/p2p/host/resource-manager"
 	"github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
+	"github.com/nnlgsakib/wwfs-node/config"
+	serial "github.com/nnlgsakib/wwfs-node/config/serialize"
 )
 
 var log = logging.Logger("testharness")
@@ -52,7 +52,7 @@ func BuildNode(ipfsBin, baseDir string, id int) *Node {
 	}
 
 	env := environToMap(os.Environ())
-	env["IPFS_PATH"] = dir
+	env["WWFS_PATH"] = dir
 
 	// If using "ipfs" binary name, provide helpful binary information
 	if ipfsBin == "ipfs" {
