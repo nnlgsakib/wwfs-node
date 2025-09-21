@@ -655,6 +655,8 @@ github.com/nnlgsakib/wwfs-sdk v1.0.7 h1:ICdI7MAJC0D2oNLM8fUEzudF3AcvccewBCu02qmE
 github.com/nnlgsakib/wwfs-sdk v1.0.7/go.mod h1:Akj39H2KgCv0mpgAqQj73Qxh3h5GKbrs4AbvN5h0PK4=
 github.com/nnlgsakib/wwfs-sdk v1.0.8 h1:wYbLKHsUEx5lLQLtvLJL6+qeQ8tNKWgO2XCMfvDAwm0=
 github.com/nnlgsakib/wwfs-sdk v1.0.8/go.mod h1:Akj39H2KgCv0mpgAqQj73Qxh3h5GKbrs4AbvN5h0PK4=
+github.com/nnlgsakib/wwfs-sdk v1.0.9 h1:pL0iR5cgvm8mddtZtfA1dYGpbyTbcDLNBxLZ+hZfCTc=
+github.com/nnlgsakib/wwfs-sdk v1.0.9/go.mod h1:Akj39H2KgCv0mpgAqQj73Qxh3h5GKbrs4AbvN5h0PK4=
 github.com/nxadm/tail v1.4.4/go.mod h1:kenIhsEOeOJmVchQTgglprH7qJGnHDVpk1VPCcaMI8A=
 github.com/nxadm/tail v1.4.8 h1:nPr65rt6Y5JFSKQO7qToXr7pePgD6Gwiw05lkbyAQTE=
 github.com/nxadm/tail v1.4.8/go.mod h1:+ncqLTQzXmGhMZNUePPaPqPvBxHAIsmXswZKocGu+AU=
