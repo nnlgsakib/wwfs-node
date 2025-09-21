@@ -1,0 +1,1 @@
+CGO_ENABLED=1 CC=musl-gcc GOOS=linux GOARCH=amd64 go build -trimpath   -ldflags="-linkmode external -extldflags '-static' -X github.com/nnlgsakib/wwfs-node.CurrentCommit=f8d612a"   -o bin/wwfs   github.com/nnlgsakib/wwfs-node/cmd/node
