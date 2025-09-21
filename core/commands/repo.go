@@ -18,9 +18,9 @@ import (
 	"github.com/nnlgsakib/wwfs-node/repo/fsrepo/migrations"
 
 	humanize "github.com/dustin/go-humanize"
-	bstore "github.com/nnlgsakib/wwfs-sdk/blockstore"
 	cid "github.com/ipfs/go-cid"
 	cmds "github.com/nnlgsakib/go-wwfs-cmds"
+	bstore "github.com/nnlgsakib/wwfs-sdk/blockstore"
 )
 
 type RepoVersion struct {
@@ -29,7 +29,7 @@ type RepoVersion struct {
 
 var RepoCmd = &cmds.Command{
 	Helptext: cmds.HelpText{
-		Tagline: "Manipulate the IPFS repo.",
+		Tagline: "Manipulate the WWFS repo.",
 		ShortDescription: `
 'ipfs repo' is a plumbing command used to manipulate the repo.
 `,

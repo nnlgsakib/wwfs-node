@@ -147,7 +147,7 @@ func applyProfiles(conf *config.Config, profiles string) error {
 }
 
 func doInit(out io.Writer, repoRoot string, empty bool, confProfiles string, conf *config.Config) error {
-	if _, err := fmt.Fprintf(out, "initializing IPFS node at %s\n", repoRoot); err != nil {
+	if _, err := fmt.Fprintf(out, "initializing WWFS node at %s\n", repoRoot); err != nil {
 		return err
 	}
 

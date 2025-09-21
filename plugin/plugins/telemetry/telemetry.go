@@ -16,15 +16,15 @@ import (
 
 	"github.com/google/uuid"
 	logging "github.com/ipfs/go-log/v2"
+	"github.com/libp2p/go-libp2p/core/network"
+	"github.com/libp2p/go-libp2p/core/pnet"
+	multiaddr "github.com/multiformats/go-multiaddr"
+	manet "github.com/multiformats/go-multiaddr/net"
 	ipfs "github.com/nnlgsakib/wwfs-node"
 	"github.com/nnlgsakib/wwfs-node/config"
 	"github.com/nnlgsakib/wwfs-node/core"
 	"github.com/nnlgsakib/wwfs-node/core/corerepo"
 	"github.com/nnlgsakib/wwfs-node/plugin"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/pnet"
-	multiaddr "github.com/multiformats/go-multiaddr"
-	manet "github.com/multiformats/go-multiaddr/net"
 )
 
 var log = logging.Logger("telemetry")
@@ -269,22 +269,6 @@ func (p *telemetryPlugin) showInfo() {
 	fmt.Printf(`
 
 ℹ️  Anonymous telemetry will be enabled in %s
-
-Kubo will collect anonymous usage data to help improve the software:
-• What:  Feature usage and configuration (no personal data)
-         Use GOLOG_LOG_LEVEL="telemetry=debug" to inspect collected data
-• When:  First collection in %s, then every 24h
-• How:   HTTP POST to %s
-         Anonymous ID: %s
-
-No data sent yet. To opt-out before collection starts:
-• Set environment: %s=off
-• Or run: ipfs config Plugins.Plugins.telemetry.Config.Mode off
-• Then restart daemon
-
-This message is shown only once.
-Learn more: https://github.com/nnlgsakib/wwfs-node/blob/master/docs/telemetry.md
-
 
 `, p.sendDelay, p.sendDelay, endpoint, p.event.UUID, modeEnvVar)
 }

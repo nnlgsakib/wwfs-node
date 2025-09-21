@@ -4,11 +4,11 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/nnlgsakib/nopfs-wwfs"
+	"github.com/nnlgsakib/nopfs-wwfs/ipfs"
 	"github.com/nnlgsakib/wwfs-node/core"
 	"github.com/nnlgsakib/wwfs-node/core/node"
 	"github.com/nnlgsakib/wwfs-node/plugin"
-	"github.com/nnlgsakib/nopfs-wwfs"
-	"github.com/nnlgsakib/nopfs-wwfs/ipfs"
 	"go.uber.org/fx"
 )
 
@@ -20,7 +20,7 @@ var Plugins = []plugin.Plugin{
 // fxtestPlugin is used for testing the fx plugin.
 // It merely adds an fx option that logs a debug statement, so we can verify that it works in tests.
 type nopfsPlugin struct {
-	// Path to the IPFS repo.
+	// Path to the WWFS repo.
 	repo string
 }
 

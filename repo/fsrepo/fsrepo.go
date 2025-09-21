@@ -12,22 +12,22 @@ import (
 	"sync"
 	"time"
 
-	filestore "github.com/nnlgsakib/wwfs-sdk/filestore"
-	keystore "github.com/nnlgsakib/wwfs-sdk/keystore"
+	rcmgr "github.com/libp2p/go-libp2p/p2p/host/resource-manager"
 	version "github.com/nnlgsakib/wwfs-node"
 	repo "github.com/nnlgsakib/wwfs-node/repo"
 	"github.com/nnlgsakib/wwfs-node/repo/common"
-	rcmgr "github.com/libp2p/go-libp2p/p2p/host/resource-manager"
+	filestore "github.com/nnlgsakib/wwfs-sdk/filestore"
+	keystore "github.com/nnlgsakib/wwfs-sdk/keystore"
 
 	ds "github.com/ipfs/go-datastore"
 	measure "github.com/ipfs/go-ds-measure"
 	lockfile "github.com/ipfs/go-fs-lock"
 	logging "github.com/ipfs/go-log/v2"
+	ma "github.com/multiformats/go-multiaddr"
 	config "github.com/nnlgsakib/wwfs-node/config"
 	serialize "github.com/nnlgsakib/wwfs-node/config/serialize"
 	"github.com/nnlgsakib/wwfs-node/misc/fsutil"
 	"github.com/nnlgsakib/wwfs-node/repo/fsrepo/migrations"
-	ma "github.com/multiformats/go-multiaddr"
 )
 
 // LockFile is the filename of the repo lock, relative to config dir
@@ -61,7 +61,7 @@ type NoRepoError struct {
 var _ error = NoRepoError{}
 
 func (err NoRepoError) Error() string {
-	return fmt.Sprintf("no IPFS repo found in %s.\nplease run: 'ipfs init'", err.Path)
+	return fmt.Sprintf("no WWFS repo found in %s.\nplease run: 'wwfs init'", err.Path)
 }
 
 const (

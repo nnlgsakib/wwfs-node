@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
-	. "github.com/nnlgsakib/wwfs-node/test/cli/testutils"
 	pb "github.com/libp2p/go-libp2p/core/crypto/pb"
 	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/nnlgsakib/wwfs-node/test/cli/harness"
+	. "github.com/nnlgsakib/wwfs-node/test/cli/testutils"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -33,7 +33,7 @@ func testInitAlgo(t *testing.T, initFlags []string, expOutputName string, expPee
 		lines := []string{
 			fmt.Sprintf("generating %s keypair...done", expOutputName),
 			fmt.Sprintf("peer identity: %s", node.PeerID().String()),
-			fmt.Sprintf("initializing IPFS node at %s\n", node.Dir),
+			fmt.Sprintf("initializing WWFS node at %s\n", node.Dir),
 		}
 		expectedInitOutput := strings.Join(lines, "\n")
 		assert.Equal(t, expectedInitOutput, initRes.Stdout.String())
@@ -66,7 +66,7 @@ func testInitAlgo(t *testing.T, initFlags []string, expOutputName string, expPee
 		lines := []string{
 			fmt.Sprintf("generating %s keypair...done", expOutputName),
 			fmt.Sprintf("peer identity: %s", node.PeerID().String()),
-			fmt.Sprintf("initializing IPFS node at %s", node.Dir),
+			fmt.Sprintf("initializing WWFS node at %s", node.Dir),
 			"to get started, enter:",
 			fmt.Sprintf("\n\tipfs cat /ipfs/%s/readme\n\n", CIDWelcomeDocs),
 		}

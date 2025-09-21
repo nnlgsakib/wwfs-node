@@ -969,7 +969,7 @@ func printLibp2pPorts(node *core.IpfsNode) {
 		sort.Strings(protocols)
 		fmt.Printf("Swarm listening on %s (%s)\n", host, strings.Join(protocols, "+"))
 	}
-	fmt.Printf("Run 'ipfs id' to inspect announced and discovered multiaddrs of this node.\n")
+	fmt.Printf("Run 'wwfs id' to inspect announced and discovered multiaddrs of this node.\n")
 }
 
 // serveHTTPGateway collects options, creates listener, prints status message and starts serving requests.
@@ -1267,8 +1267,8 @@ func printVersion() {
 	if version.CurrentCommit != "" {
 		v += "-" + version.CurrentCommit
 	}
-	fmt.Printf("Kubo version: %s\n", v)
-	fmt.Printf("Repo version: %d\n", fsrepo.RepoVersion)
+	// fmt.Printf("Kubo version: %s\n", v)
+	// fmt.Printf("Repo version: %d\n", fsrepo.RepoVersion)
 	fmt.Printf("System version: %s\n", runtime.GOARCH+"/"+runtime.GOOS)
 	fmt.Printf("Golang version: %s\n", runtime.Version())
 }
